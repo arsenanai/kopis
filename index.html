@@ -44,16 +44,32 @@
 		.fn1{
 			font-family: "Impact", sans-serif;
 		}
-		.fs33{
-			font-size: 20px;
-		}
-		.fs19{
-			font-size: 16px;
-		}
 		.dropdown-item.active, .dropdown-item:active {
 			color: #fff !important;
 			text-decoration: none;
 			background-color: #02AEEE;
+		}
+		@media (min-width: 992px) {
+			.brand-logo{
+				width: 118px;
+			}
+			.fs33{
+				font-size: 20px;
+			}
+			.fs19{
+				font-size: 16px;
+			}
+		}
+		@media (max-width: 992px) {
+			.brand-logo{
+				width: 59px;
+			}
+			.fs33{
+				font-size: 15px;
+			}
+			.fs19{
+				font-size: 12px;
+			}
 		}
 	</style>
 </head>
@@ -64,7 +80,7 @@
 		  		<table>
 		  			<tr>
 		  				<td rowspan=3>
-		  					<img id="main-logo" src="assets/image 29.svg" width=118>
+		  					<img id="main-logo" src="assets/image 29.svg" class="brand-logo">
 		  				</td>
 		  				<td class="fc1 fn1 fs33" style="padding-left: 10px;">
 		  					Колледж<br>
