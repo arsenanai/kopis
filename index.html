@@ -26,22 +26,32 @@
 		    width: 100%;
 		    clear: both;
 		}
+		.bt1{
+			background-color: #64b7d8 !important;
+			color: #5E0000 !important;
+			font-weight: bold;
+		}
+		.bt1:hover{
+			background-color: #1a7ea5 !important;
+			color: white !important;
+			font-weight: bold;
+		}
 		.fc1{
 			color: #02AEEE !important;
 		}
-		.fc1:hover{
+		a.fc1:hover{
 			color: #0183b2 !important;
 		}
 		.fc2 {
 			color: #736357 !important;
 		}
-		.fc2:hover, .fc2::placeholder{
+		a.fc2:hover, .fc2::placeholder{
 			color: #a89c94 !important;
 		}
-		.footer-link, .footer-text{
+		.footer-link, .footer-text, .fc3{
 			color: #7C0000 !important;
 		}
-		.footer-link:hover, .footer-title{
+		.footer-link:hover, .footer-title, a.fc3:hover{
 			color: #b75d5d !important;
 		}
 		@font-face{
@@ -67,26 +77,58 @@
 			.brand-logo{
 				width: 118px;
 			}
-			.fs33{
+			.fs-xxxl{
+				font-size: 40px;
+			}
+			.fs-xxl{
+				font-size: 30px;
+			}
+			.fs-xl{
 				font-size: 20px;
 			}
-			.fs19{
+			.fs-lg{
+				font-size: 18px;
+			}
+			.fs-md{
 				font-size: 16px;
+			}
+			.fs-sm{
+				font-size: 14px;
+			}
+			.fs-xs{
+				font-size: 12px;
 			}
 		}
 		@media (max-width: 992px) {
 			.brand-logo{
 				width: 59px;
 			}
-			.fs33{
+			.fs-xxxl{
+				font-size: 17px;
+			}
+			.fs-xxl{
+				font-size: 16px;
+			}
+			.fs-xl{
 				font-size: 15px;
 			}
-			.fs19{
+			.fs-lg{
+				font-size: 14px;
+			}
+			.fs-md{
+				font-size: 14px;
+			}
+			.fs-sm{
+				font-size: 13px;
+			}
+			.fs-xs{
 				font-size: 12px;
 			}
 		}
 		.footer{
 			background-color:rgb(249,249,249);
+		}
+		.section, section{
 			padding-top:26px;
 			padding-bottom:26px;
 		}
@@ -113,7 +155,7 @@
 		  				<td rowspan=3>
 		  					<img id="main-logo" src="assets/logo.svg" class="brand-logo">
 		  				</td>
-		  				<td class="fc1 fn1 fs33" style="padding-left: 10px;">
+		  				<td class="fc1 fn1 fs-xl" style="padding-left: 10px;">
 		  					Колледж<br>
 					  		общественного<br>
 					  		питания и сервиса
@@ -125,7 +167,7 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
-		  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn2 fs19">
+		  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn2 fs-xs">
 	  		  <li class="nav-item">
 		        <a class="nav-link fc2" href="">Гос символ</a>
 		      </li>
@@ -139,14 +181,14 @@
 		        <a class="nav-link dropdown-toggle fc2" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          <img src="assets/globe.svg" height=16>
 		        </a>
-		        <div class="dropdown-menu fs19" aria-labelledby="navbarDropdownMenuLink">
+		        <div class="dropdown-menu fs-xs" aria-labelledby="navbarDropdownMenuLink">
 		          <a class="dropdown-item fc2" href="">Қазақ</a>
 		          <a class="dropdown-item fc2" href="">English</a>
 		          <a class="dropdown-item fc2 active" href="">Русский</a>
 		        </div>
 		    </li>
 		    </ul>
-		    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn1 fs33">
+		    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn1 fs-xl">
 	  		  <li class="nav-item">
 		        <a class="nav-link fc1" href="">Колледж</a>
 		      </li>
@@ -163,7 +205,7 @@
 		        <a class="nav-link fc1" href="">Документы</a>
 		      </li>
 		    </ul>
-		    <form class="form-inline ml-auto my-2 my-lg-0 fn2 fs19">
+		    <form class="form-inline ml-auto my-2 my-lg-0 fn2 fs-xs">
 		      <input class="form-control mr-sm-2 fc2" type="search" placeholder="Поиск" aria-label="Поиск">
 		      <button class="btn btn-light my-2 my-sm-0 fc2" type="submit">
 		      	<img src="assets/search.svg" height=16>
@@ -214,7 +256,88 @@
 	    <span class="sr-only">Следующий</span>
 	  </a>
 	</div>
-	<footer class="footer fn2">
+	<section id="partners" class="container" >
+		<p class="text-center fn1 fs-xxl fc3">Наши партнеры</p>
+		<div id="carousel2" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel2" data-slide-to="1"></li>
+		    <li data-target="#carousel2" data-slide-to="2"></li>
+		    <li data-target="#carousel2" data-slide-to="3"></li>
+		    <li data-target="#carousel2" data-slide-to="4"></li>
+		    <li data-target="#carousel2" data-slide-to="5"></li>
+		    <li data-target="#carousel2" data-slide-to="6"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="assets/slide1.jpg" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide2.jpg" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide3.jpg" alt="Third slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide4.jpg" alt="4th slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide5.jpg" alt="5th slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide6.jpg" alt="6th slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="assets/slide7.jpg" alt="7th slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Предыдущий</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Следующий</span>
+		  </a>
+		</div>
+	</section>
+	<section id="contact-us" class="fn2 fs-sm bg-white">
+		<div class="container">
+			<p class="text-center fn1 fs-xxl fc3">Контактная форма</p>
+			<form>
+			  <div class="form-group row">
+			    <label for="fullname" class="col-sm-2 col-form-label">ФИО</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control fs-sm" id="fullname" placeholder="ФИО" required>
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control fs-sm" id="email" placeholder="E-Mail" required>
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
+			    <div class="col-sm-10">
+			      <input type="tel" class="form-control fs-sm" id="phone" placeholder="Телефон" required>
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="message" class="col-sm-2 col-form-label">Сообщение</label>
+			    <div class="col-sm-10">
+			      <textarea class="form-control fs-sm" id="message" placeholder="Сообщение" required></textarea>
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <div class="col-sm-10 offset-sm-2">
+			      <button type="submit" class="btn bt1 fs-sm">Отправить</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+	</section>
+	<footer class="footer section fn2 fs-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -241,8 +364,7 @@
 				<div class="col-md-6">
 					<div class="float-md-right">
 						<span class="footer-title float-md-right">Контакты</span><br>
-						<span class="footer-text float-md-right">г. Астана</span><br>
-						<span class="footer-text float-md-right">Сауран 16</span><br>
+						<a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
 						<a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
 						<a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
 						<div class="links float-md-right">
