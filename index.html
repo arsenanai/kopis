@@ -11,15 +11,16 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<style type="text/css">
-		html,body{
-			background-color: snow;
-			/*
-			background: url('assets/image 3.svg')
-			background-repeat: repeat;
-			background-size: 500px 500px;
-			*/
+		html,body{			
+			background-color: #fcfcfc;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23f4f4f4' fill-opacity='0.51'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-rendering: optimizeLegibility;
+			scroll-behavior: smooth;
+			-webkit-scroll-behavior: smooth;
 		}
 		.navbar-collapse {
 		    float: left;
@@ -63,7 +64,7 @@
 		  src: url("fonts/Century Gothic.ttf") format("truetype");
 		}
 		.fn2{
-			font-family: "Century Gothic", sans-serif;
+			font-family: 'Century Gothic', sans-serif;
 		}
 		.fn1{
 			font-family: "Impact", Impact, sans-serif;
@@ -84,7 +85,7 @@
 				font-size: 30px;
 			}
 			.fs-xl{
-				font-size: 20px;
+				font-size: 22px;
 			}
 			.fs-lg{
 				font-size: 18px;
@@ -135,262 +136,340 @@
 		@media (min-width: 992px) {
 			.footer{
 				background-image: url('assets/lenta.svg'), url('assets/logo.svg');
-  				background-position: 0% 100%,50% 75%;
+  				background-position: -0.2mm 100%,50% 75%;
   				background-repeat: no-repeat, no-repeat;
-  				background-size: 100% 100%, 118px 118px;
+  				background-size: 100.07% auto, 118px 118px;
 				padding-bottom:350px;
 			}
 		}
 		div.links a{
   			display: inline-block;
   		}
+  		.with-background-image{
+			-webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
+		}
+		.aspect-ratio-16-9{
+			width:100%;
+			height: 56.25vw;
+		}
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
-		<div class="container">
-		  	<a class="navbar-brand mb-0 h1 mr-auto fc1" href="">
-		  		<table>
-		  			<tr>
-		  				<td rowspan=3>
-		  					<img id="main-logo" src="assets/logo.svg" class="brand-logo">
-		  				</td>
-		  				<td class="fc1 fn1 fs-xl" style="padding-left: 10px;">
-		  					Колледж<br>
-					  		общественного<br>
-					  		питания и сервиса
-		  				</td>
-		  			</tr>
-		  		</table>
-			</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
-		  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn2 fs-xs">
-	  		  <li class="nav-item">
-		        <a class="nav-link fc2" href="">Гос символ</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc2" href="">Послание президента</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc2" href="">Вопросы психологу</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle fc2" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          <img src="assets/globe.svg" height=16>
-		        </a>
-		        <div class="dropdown-menu fs-xs" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item fc2" href="">Қазақ</a>
-		          <a class="dropdown-item fc2" href="">English</a>
-		          <a class="dropdown-item fc2 active" href="">Русский</a>
-		        </div>
-		    </li>
-		    </ul>
-		    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn1 fs-xl">
-	  		  <li class="nav-item">
-		        <a class="nav-link fc1" href="">Колледж</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc1" href="">Абитуриентам</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc1" href="">Студентам</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc1" href="">Преподавателям</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link fc1" href="">Документы</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline ml-auto my-2 my-lg-0 fn2 fs-xs">
-		      <input class="form-control mr-sm-2 fc2" type="search" placeholder="Поиск" aria-label="Поиск">
-		      <button class="btn btn-light my-2 my-sm-0 fc2" type="submit">
-		      	<img src="assets/search.svg" height=16>
-		      </button>
-		    </form>
-		  </div>
-		</div>
-	</nav>
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-	    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-	  </ol>
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="assets/slide1.jpg" alt="First slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide2.jpg" alt="Second slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide3.jpg" alt="Third slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide4.jpg" alt="4th slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide5.jpg" alt="5th slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide6.jpg" alt="6th slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="assets/slide7.jpg" alt="7th slide">
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Предыдущий</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Следующий</span>
-	  </a>
-	</div>
-	<section id="partners" class="container" >
-		<p class="text-center fn1 fs-xxl fc3">Наши партнеры</p>
-		<div id="carousel2" class="carousel slide" data-ride="carousel">
+	<div id="app">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+			<div class="container">
+			  	<a class="navbar-brand mb-0 h1 mr-auto fc1" href="">
+			  		<table>
+			  			<tr>
+			  				<td rowspan=3>
+			  					<img id="main-logo" src="assets/logo.svg" class="brand-logo">
+			  				</td>
+			  				<td class="fc1 fn1 fs-xl" style="padding-left: 10px;">
+			  					Колледж<br>
+						  		общественного<br>
+						  		питания и сервиса
+			  				</td>
+			  				<!--<td class="fc1 fn1 fs-xl" style="padding-left: 10px;">
+			  					Қоғамдық<br>
+			  					тамақтандыру<br>
+			  					және сервис колледжі
+			  				</td>-->
+			  			</tr>
+			  		</table>
+				</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
+			  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn2 fs-xs">
+		  		  <li class="nav-item">
+			        <a class="nav-link fc2" href="">Гос символ</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link fc2" href="">Послание президента</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link fc2" href="">Вопросы психологу</a>
+			      </li>
+			      	<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle fc2" href="" id="dr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          <img src="assets/globe.svg" height=16>
+				        </a>
+				        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr1">
+				          <a class="dropdown-item fc2" href="">Қазақ</a>
+				          <a class="dropdown-item fc2" href="">English</a>
+				          <a class="dropdown-item fc2 active" href="">Русский</a>
+				        </div>
+			    	</li>
+			    </ul>
+			    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn1 fs-lg">
+			      	<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle fc1" href="" id="dr2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Колледж
+				        </a>
+				        <div class="dropdown-menu fs-xs" aria-labelledby="dr2">
+				          <a class="dropdown-item fc1 active" href="">Menu 1</a>
+				          <a class="dropdown-item fc1" href="">Menu 2</a>
+				          <a class="dropdown-item fc1" href="">Menu 3</a>
+				        </div>
+					</li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc1 dropdown-toggle" href="" id="dr3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Абитуриентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr3">
+				          <a class="dropdown-item fc1 active" href="">Menu 1</a>
+				          <a class="dropdown-item fc1" href="">Menu 2</a>
+				          <a class="dropdown-item fc1" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc1 dropdown-toggle" href="" id="dr4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr4">
+				          <a class="dropdown-item fc1 active" href="">Menu 1</a>
+				          <a class="dropdown-item fc1" href="">Menu 2</a>
+				          <a class="dropdown-item fc1" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc1 dropdown-toggle" href="" id="dr5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Преподавателям</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr5">
+				          <a class="dropdown-item fc1 active" href="">Menu 1</a>
+				          <a class="dropdown-item fc1" href="">Menu 2</a>
+				          <a class="dropdown-item fc1" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc1 dropdown-toggle" href="" id="dr6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Документы</a>
+			        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr6">
+				          <a class="dropdown-item fc1 active" href="">Menu 1</a>
+				          <a class="dropdown-item fc1" href="">Menu 2</a>
+				          <a class="dropdown-item fc1" href="">Menu 3</a>
+				    </div>
+			      </li>
+			    </ul>
+			    <form class="form-inline ml-auto my-2 my-lg-0 fn2 fs-xs">
+			      <input class="form-control mr-sm-2 fc2" type="search" placeholder="Поиск" aria-label="Поиск">
+			      <button class="btn btn-light my-2 my-sm-0 fc2" type="submit">
+			      	<img src="assets/search.svg" height=16>
+			      </button>
+			    </form>
+			  </div>
+			</div>
+		</nav>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
-		    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel2" data-slide-to="1"></li>
-		    <li data-target="#carousel2" data-slide-to="2"></li>
-		    <li data-target="#carousel2" data-slide-to="3"></li>
-		    <li data-target="#carousel2" data-slide-to="4"></li>
-		    <li data-target="#carousel2" data-slide-to="5"></li>
-		    <li data-target="#carousel2" data-slide-to="6"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
 		  </ol>
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <img class="d-block w-100" src="assets/slide1.jpg" alt="First slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide1.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide2.jpg" alt="Second slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide2.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide3.jpg" alt="Third slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide3.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide4.jpg" alt="4th slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide4.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide5.jpg" alt="5th slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide5.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide6.jpg" alt="6th slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide6.jpg');"></div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block w-100" src="assets/slide7.jpg" alt="7th slide">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide7.jpg');"></div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="with-background-image aspect-ratio-16-9" 
+		    	style="background-image:url('assets/slide 8.jpg');"></div>
 		    </div>
 		  </div>
-		  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Предыдущий</span>
 		  </a>
-		  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Следующий</span>
 		  </a>
 		</div>
-	</section>
-	<section id="contact-us" class="fn2 fs-sm bg-white">
-		<div class="container">
-			<p class="text-center fn1 fs-xxl fc3">Контактная форма</p>
-			<form>
-			  <div class="form-group row">
-			    <label for="fullname" class="col-sm-2 col-form-label">ФИО</label>
-			    <div class="col-sm-10">
-			      <input type="text" class="form-control fs-sm" id="fullname" placeholder="ФИО" required>
+		<section id="partners" class="container" >
+			<p class="text-center fn1 fs-xxl fc3">Наши партнеры</p>
+			<div id="carousel2" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel2" data-slide-to="1"></li>
+			    <li data-target="#carousel2" data-slide-to="2"></li>
+			    <li data-target="#carousel2" data-slide-to="3"></li>
+			    <li data-target="#carousel2" data-slide-to="4"></li>
+			    <li data-target="#carousel2" data-slide-to="5"></li>
+			    <li data-target="#carousel2" data-slide-to="6"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="assets/slide1.jpg" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide2.jpg" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide3.jpg" alt="Third slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide4.jpg" alt="4th slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide5.jpg" alt="5th slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide6.jpg" alt="6th slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/slide7.jpg" alt="7th slide">
 			    </div>
 			  </div>
-			  <div class="form-group row">
-			    <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
-			    <div class="col-sm-10">
-			      <input type="email" class="form-control fs-sm" id="email" placeholder="E-Mail" required>
-			    </div>
-			  </div>
-			  <div class="form-group row">
-			    <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
-			    <div class="col-sm-10">
-			      <input type="tel" class="form-control fs-sm" id="phone" placeholder="Телефон" required>
-			    </div>
-			  </div>
-			  <div class="form-group row">
-			    <label for="message" class="col-sm-2 col-form-label">Сообщение</label>
-			    <div class="col-sm-10">
-			      <textarea class="form-control fs-sm" id="message" placeholder="Сообщение" required></textarea>
-			    </div>
-			  </div>
-			  <div class="form-group row">
-			    <div class="col-sm-10 offset-sm-2">
-			      <button type="submit" class="btn bt1 fs-sm">Отправить</button>
-			    </div>
-			  </div>
-			</form>
-		</div>
-	</section>
-	<footer class="footer section fn2 fs-xs">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-10 text-md-center">
-							<span class="footer-title">Навигиция по сайту</span>
+			  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Предыдущий</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Следующий</span>
+			  </a>
+			</div>
+		</section>
+		<section id="contact-us" class="fn2 fs-sm bg-white">
+			<div class="container">
+				<p class="text-center fn1 fs-xxl fc3">Контактная форма</p>
+				<form>
+				  <div class="form-group row">
+				    <label for="fullname" class="col-sm-2 col-form-label">ФИО</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control fs-sm" id="fullname" placeholder="ФИО" required>
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
+				    <div class="col-sm-10">
+				      <input type="email" class="form-control fs-sm" id="email" placeholder="E-Mail" required>
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
+				    <div class="col-sm-10">
+				      <input type="tel" class="form-control fs-sm" id="phone" placeholder="Телефон" required>
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="message" class="col-sm-2 col-form-label">Сообщение</label>
+				    <div class="col-sm-10">
+				      <textarea class="form-control fs-sm" id="message" placeholder="Сообщение" required></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <div class="col-sm-10 offset-sm-2">
+				      <button type="submit" class="btn bt1 fs-sm">Отправить</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
+		</section>
+		<footer class="footer section fn2 fs-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-10 text-md-center">
+								<span class="footer-title">Навигиция по сайту</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a class="footer-link" href="">Гос символ</a><br>
+								<a class="footer-link" href="">Послание президента</a><br>
+								<a class="footer-link" href="">Вопросы психологу</a><br>
+							</div>
+							<div class="col-md-6">
+								<a class="footer-link" href="">Колледж</a><br>
+								<a class="footer-link" href="">Абитуриенту</a><br>
+								<a class="footer-link" href="">Студентам</a><br>
+								<a class="footer-link" href="">Преподавателям</a><br>
+								<a class="footer-link" href="">Документы</a><br>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<a class="footer-link" href="">Гос символ</a><br>
-							<a class="footer-link" href="">Послание президента</a><br>
-							<a class="footer-link" href="">Вопросы психологу</a><br>
-						</div>
-						<div class="col-md-6">
-							<a class="footer-link" href="">Колледж</a><br>
-							<a class="footer-link" href="">Абитуриенту</a><br>
-							<a class="footer-link" href="">Студентам</a><br>
-							<a class="footer-link" href="">Преподавателям</a><br>
-							<a class="footer-link" href="">Документы</a><br>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="float-md-right">
-						<span class="footer-title float-md-right">Контакты</span><br>
-						<a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
-						<a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
-						<a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
-						<div class="links float-md-right">
-							<a href="">
-								<img width="21" height="21" src="assets/twitter.svg">
-							</a>
-							<a href="">
-								<img width="21" height="21" src="assets/youtube.svg">
-							</a>
-							<a href="https://www.facebook.com/ktsk.kopis/">
-								<img width="21" height="21" src="assets/facebook.svg">
-							</a>
-							<a href="">
-								<img width="21" height="21" src="assets/instagram.svg">
-							</a>
+					<div class="col-md-6">
+						<div class="float-md-right">
+							<span class="footer-title float-md-right">Контакты</span><br>
+							<a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
+							<a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
+							<a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
+							<div class="links float-md-right">
+								<a href="">
+									<img width="21" height="21" src="assets/twitter.svg">
+								</a>
+								<a href="">
+									<img width="21" height="21" src="assets/youtube.svg">
+								</a>
+								<a href="https://www.facebook.com/ktsk.kopis/">
+									<img width="21" height="21" src="assets/facebook.svg">
+								</a>
+								<a href="">
+									<img width="21" height="21" src="assets/instagram.svg">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
 </body>
 <script type="text/javascript">
-	
+	/*var app = new Vue({
+		el: '#app',
+		data: {
+		message: 'Hello Vue!'
+		},
+		created() {
+		  this.myEventHandler();
+		  window.addEventListener("resize", this.myEventHandler);
+		},
+		destroyed() {
+		  window.removeEventListener("resize", this.myEventHandler);
+		},
+		methods: {
+		  myEventHandler(e) {
+		    var slides = document.getElementsByClassName("aspect-ratio-16-9");
+		    var carouselContainer = slides.item(i).parentElement.parentElement;
+			for(var i = 0; i < slides.length; i++){
+			   slides.item(i).style.height = carouselContainer.offsetWidth*9/16+'px';
+			}
+		  }
+		}
+	})*/
 </script>
 </html>
