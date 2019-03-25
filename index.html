@@ -31,15 +31,23 @@
 		.text-bold{
 			font-weight: bold;
 		}
+		.sc-bc-blue{
+			background-color: #80b6d8 !important;
+		}
 		.bc-blue{
-			background-color: #02AEEE !important;
+			background-color: #80b6d8 !important;
 		}
 		.bc-blue:hover{
 			background-color: #1a7ea5 !important;
 		}
+		.bc-redish{
+			background-color: #c0b3bc !important;
+		}
+		.bc-red{
+			background-color: #7c0000;
+		}
 		.fn-bt-red{
 			color: #5E0000 !important;
-			
 		}
 		.fn-bt-red:hover{
 			color: white !important;
@@ -156,6 +164,7 @@
 		    -moz-background-size: cover;
 		    -o-background-size: cover;
 		    background-size: cover;
+		    background-position: center center;
 		}
 		.aspect-ratio-16-9{
 			width:100%;
@@ -165,10 +174,13 @@
 			font-size: 100%;
 		}
 		.badge-primary{
-			background-color: #7C0000;
+			background-color: #736357;
 		}
 		.badge-secondary{
-			background-color: #02AEEE;
+			background-color: #80b6d8;
+		}
+		.badge-danger{
+			background-color: #7C0000;
 		}
 		.calendar-holder{
 			min-height: 179px;
@@ -192,22 +204,68 @@
 		.lh-1{
 			line-height:1;
 		}
-		.relative{
-			position:relative;
-			width:100%;
-			height:100%;
+		.card-news{
+			box-shadow: 5px 5px #7C0000;
+			border: 0px solid rgba(0,0,0,.125);
+			border-radius: 16.46px;
 		}
-		.vertical-center{
-			margin: 0;
-		  position: relative;
-		  top: 50%;
-		  left: 50%;
-		  -ms-transform: translate(-50%, -50%);
-		  transform: translate(-50%, -50%);
+		@media (min-width: 992px) {
+			.card-img-top{
+				border-top-right-radius: 0px;
+				border-top-left-radius: 16.46px;
+				border-bottom-left-radius: 16.46px;
+			}
+			#news{
+				border-top-left-radius: 250px 125px;
+			}
+			#videos{
+				border-bottom-left-radius: 250px 125px;
+			}
+			.video{
+				width: 720px;
+				height: 480px;
+			}
+			.mt-39{
+				padding-top:50px;
+			}
+			#blog{
+				background-image: url('assets/blog.svg');
+  				background-position: -1px -40px;
+  				background-repeat: no-repeat;
+  				background-size: 101% auto;
+			}
 		}
-		.center-block {
-			margin:auto;
-		   display:table;
+		@media (max-width: 992px) {
+			.card-img-top{
+				border-top-left-radius: 16.46px;
+				border-top-right-radius: 16.46px;
+				border-bottom-left-radius: 0px;
+				min-height: 251px;
+			}
+			.card-block{
+				padding-left: 1rem;
+			}
+			.video{
+				width:80vw;
+				height:60vw;
+			}
+		}
+		.card-text{
+			overflow: scroll;
+			height: 72px;
+		}
+		.card-img-top{
+			height: 100%;
+		}
+		#news{
+			margin-top:10px;
+			border-top: 10px solid #7C0000;
+			box-shadow: -10px 0px #7C0000;
+		}
+		#videos{
+			margin-bottom:10px;
+			border-bottom: 10px solid #7C0000;
+			box-shadow: -10px 0px #7C0000;
 		}
 	</style>
 </head>
@@ -307,7 +365,7 @@
 			  </div>
 			</div>
 		</nav>
-		<!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -360,37 +418,146 @@
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Следующий</span>
 		  </a>
-		</div>-->
+		</div>
 		<!-- kazirgi -->
-		<section id="news">
-			
+		<section id="news" class="pr-3 pl-3 sc-bc-blue">
+			<div class="container-fluid">
+				<div class="row fn-gothic">
+					<div class="col-md-9">
+						<p class="text-center fs-xxl fc-red fn-impact">Новости и события</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card mt-4 mb-4 card-news">
+							      <div class="row ">
+							        <div class="col-lg-6">
+							        	<div class="with-background-image card-img-top" 
+							        	style="background-image:url('https://placeholdit.imgix.net/~text?txtsize=38&txt=326%C3%97251&w=326&h=251'); "></div>
+							        </div>
+							          <div class="col-lg-6">
+							            <div class="card-block pt-2 pr-2 pb-2">
+							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
+							              <div class="card-text fs-xs">
+							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
+							              </div>
+							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+							              	<a href="" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+							            </div>
+							          </div>
+
+							        </div>
+							      </div>
+							      <div class="card mt-4 mb-4 card-news">
+							      <div class="row ">
+							        <div class="col-lg-6">
+							        	<div class="with-background-image card-img-top" 
+							        	style="background-image:url('https://placeholdit.imgix.net/~text?txtsize=38&txt=326%C3%97251&w=326&h=251'); "></div>
+							        </div>
+							          <div class="col-lg-6">
+							            <div class="card-block pt-2 pr-2 pb-2">
+							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
+							              <div class="card-text fs-xs">
+							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
+							              </div>
+							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+							              	<a href="" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+							            </div>
+							          </div>
+
+							        </div>
+							      </div>
+							</div>
+							<div class="col-md-6">
+								<div class="card mt-4 mb-4 card-news">
+							      <div class="row ">
+							        <div class="col-lg-6">
+							        	<div class="with-background-image card-img-top" 
+							        	style="background-image:url('https://placeholdit.imgix.net/~text?txtsize=38&txt=326%C3%97251&w=326&h=251'); "></div>
+							        </div>
+							          <div class="col-lg-6">
+							            <div class="card-block pt-2 pr-2 pb-2">
+							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
+							              <div class="card-text fs-xs">
+							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
+							              </div>
+							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+							              	<a href="" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+							            </div>
+							          </div>
+
+							        </div>
+							      </div>
+							      <div class="card mt-4 mb-4 card-news">
+							      <div class="row ">
+							        <div class="col-lg-6">
+							        	<div class="with-background-image card-img-top" 
+							        	style="background-image:url('https://placeholdit.imgix.net/~text?txtsize=38&txt=326%C3%97251&w=326&h=251'); "></div>
+							        </div>
+							          <div class="col-lg-6">
+							            <div class="card-block pt-2 pr-2 pb-2">
+							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
+							              <div class="card-text fs-xs">
+							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
+							              </div>
+							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+							              	<a href="" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+							            </div>
+							          </div>
+
+							        </div>
+							      </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 fn-gothic fs-md">
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/flag.svg" width=30> Государственные символы</a>
+						</div>
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/manifest.svg" width=30> Послание Президента</a>
+						</div>
+						<div class="fn-impact fs-lg fc-red mb-3">Полезные ссылки</div>
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр медико-социальной реабилитации</a>
+						</div>
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр проблем психического здоровья</a>
+						</div>
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр дерматологии Астаны</a>
+						</div>
+						<div class="mb-3">
+							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр профилактики и борьбы со СПИДом</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</section>
-		
-		<!--<section id="blog" class="bg-white">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-3 text-center mt-1 mb-1">
-						<div class="relative">
-							<calendar v-model="curr"/>
-						</div>
+
+		<section id="blog" class="bg-white">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-lg-3 text-center mt-1 mb-1 mt-39">
+						<calendar v-model="curr"/>
 					</div>
-					<div class="col-md-6 col-lg-3 mt-1 mb-1">
-						<div class="relative">
-							<a class="btn bc-blue fs-xl text-white fn-impact lh-1 vertical-center">
-								График приема директора
-							</a>
-						</div>
+					<div class="col-md-6 col-lg-3 mt-1 mb-1 text-center mt-39">
+						<a class="btn bc-blue fs-xl text-white fn-impact lh-1">
+							График приема директора
+						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 mt-1 mb-1">
-						<div class="relative">
-							<a class="btn btn-link vertical-center fn-impact fc-red fs-xxl lh-1">Блог директора</a>
-						</div>
+					<div class="col-md-6 col-lg-3 mt-1 mb-1 text-center">
+						<a class="btn btn-link fn-impact fc-red fs-xxl lh-1">Блог директора</a>
 					</div>
-					<div class="col-md-6 col-lg-3 mt-1 mb-1">
-						<div class="relative">
-							<img class="vertical-center" src="assets/director.jpg" width=200/>
-						</div>
-					</div>
+				</div>
+			</div>
+		</section>
+		<section id="videos" class="fn-impact sc-bc-blue">
+			<p class="text-center fs-xxl fc-red">Наши видео</p>
+			<div class="container-fluid">
+				<div class="align-items-center text-center">
+					<iframe class="video"
+						src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
+					</iframe>
 				</div>
 			</div>
 		</section>
@@ -526,7 +693,7 @@
 		</footer>
 	</div>
 	<template id="calendar">
-	  <div class="calendar-holder vertical-center">
+	  <div class="calendar-holder">
 	  
 	  <table class="calendar text-center fn-roboto calendar transitionable fs-sm mr-auto ml-auto">
 	  	<tbody>
@@ -558,7 +725,7 @@
 	  	</tbody>
 	  </table>
 	</div>
-	</template>-->
+	</template>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
