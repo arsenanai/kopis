@@ -125,29 +125,31 @@
 							<h3 class="fn-impact fc-red">Фотогалерея</h3>
 						</div>
 					</div>
-					<p class="text-center fc-gold" v-if="albums.length>0">
-						<a v-for="(album,index) in albums"
-							class="link mr-3"
-							:class="isSelectedAlbum(index)"
-							@click="selectAlbum(index)"
-							style="cursor:pointer"
-						>
-							{{album.title}}
-						</a>
-					</p>
-					<div class="row" v-if="albums.length>0">
-						<div class="col">
-							<img class="w-100 photo"
-								:src="albums[selectedAlbum].photos[selectedPhoto]">
+					<div v-cloak>
+						<p class="text-center fc-gold" v-if="albums.length>0">
+							<a v-for="(album,index) in albums"
+								class="link mr-3"
+								:class="isSelectedAlbum(index)"
+								@click="selectAlbum(index)"
+								style="cursor:pointer"
+							>
+								{{album.title}}
+							</a>
+						</p>
+						<div class="row" v-if="albums.length>0">
+							<div class="col">
+								<img class="w-100 photo"
+									:src="albums[selectedAlbum].photos[selectedPhoto]">
+							</div>
 						</div>
-					</div>
-					<div class="align-items-center myrow w-100">
-						<div v-for="(photo, index) in albums[selectedAlbum].photos"
-							class="with-background-image selector photo"
-							:style="getStyle(photo)"
-							:class="isSelectedPhoto(index)"
-							@click="selectPhoto(index)"
-						></div>
+						<div class="align-items-center myrow w-100">
+							<div v-for="(photo, index) in albums[selectedAlbum].photos"
+								class="with-background-image selector photo"
+								:style="getStyle(photo)"
+								:class="isSelectedPhoto(index)"
+								@click="selectPhoto(index)"
+							></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -256,27 +258,27 @@
 				],
 			},
 			methods: {
-			  changeSelectedAlbum(number){
+			  changeSelectedAlbum: function(number){
 			  	this.selectedAlbum = number
 			  },
-			  changeSelectedPhoto(number){
+			  changeSelectedPhoto: function(number){
 			  	this.selectedPhoto = number
 			  },
-			  isSelectedAlbum(index){
+			  isSelectedAlbum: function(index){
 			  	return (index===this.selectedAlbum) ? 'fc-blue' : ''
 			  },
-			  isSelectedPhoto(index){
+			  isSelectedPhoto: function(index){
 			  	return (index===this.selectedPhoto) ? 'selected' : ''
 			  },
-			  selectAlbum(index){
+			  selectAlbum: function(index){
 			  	this.selectedAlbum = index
 			  	this.selectedPhoto = 0
 			  	this.cursor = 0
 			  },
-			  selectPhoto(index){
+			  selectPhoto: function(index){
 			  	this.selectedPhoto = index
 			  },
-			  getStyle(photo){
+			  getStyle: function(photo){
 			  	return "background-image: url('"+photo+"');"
 			  }
 			}
@@ -311,6 +313,7 @@
     	.selected{
     		box-shadow: 0px 0px 2px 0px blue;
     	}
+    	[v-cloak] {display: none}
     </style>
 </body>
 </html>
