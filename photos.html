@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KOPIS - News Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="assets/favicon.png" itemprop="image">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="src/photos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700|Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+			<div class="container">
+			  	<a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="index.html">
+			  		<table>
+			  			<tr>
+			  				<td rowspan=3>
+			  					<img id="main-logo" src="assets/logo.svg" class="brand-logo">
+			  				</td>
+			  				<td class="fc-blue fn-impact fs-xl" style="padding-left: 10px;">
+			  					Колледж<br>
+						  		общественного<br>
+						  		питания и сервиса
+			  				</td>
+			  			</tr>
+			  		</table>
+				</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
+			  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn-gothic fs-xs">
+		  		  <li class="nav-item">
+			        <a class="nav-link fc-gold" href="">Гос символ</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link fc-gold" href="">Послание президента</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link fc-gold" href="">Вопросы психологу</a>
+			      </li>
+			      	<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle fc-gold" href="" id="dr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          <img src="assets/globe.svg" height=16>
+				        </a>
+				        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr1">
+				          <a class="dropdown-item fc-gold" href="">Қазақ</a>
+				          <a class="dropdown-item fc-gold" href="">English</a>
+				          <a class="dropdown-item fc-gold active" href="">Русский</a>
+				        </div>
+			    	</li>
+			    </ul>
+			    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn-impact fs-lg">
+			      	<li class="nav-item dropdown active">
+				        <a class="nav-link dropdown-toggle fc-blue" href="" id="dr2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Колледж
+				        </a>
+				        <div class="dropdown-menu fs-xs" aria-labelledby="dr2">
+				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				        </div>
+					</li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Абитуриентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr3">
+				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr4">
+				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Преподавателям</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr5">
+				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Документы</a>
+			        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr6">
+				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				    </div>
+			      </li>
+			    </ul>
+			    <form class="form-inline ml-auto my-2 my-lg-0 fn-gothic fs-xs">
+			      <input class="form-control mr-sm-2 fc-gold " type="search" placeholder="Поиск" aria-label="Поиск">
+			      <button class="btn btn-light my-2 my-sm-0 fc-gold" type="submit">
+			      	<img src="assets/search.svg" height=16>
+			      </button>
+			    </form>
+			  </div>
+			</div>
+		</nav>
+		<section id="photos" class="fn-gothic">
+			<div class="photos">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb fs-sm fc-gold">
+							    <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Главная</a></li>
+							    <li class="breadcrumb-item">Студентам</li>
+							    <li class="breadcrumb-item active" aria-current="page">Фотографии</li>
+							  </ol>
+							</nav>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" style="margin-left:30px">
+							<h3 class="fn-impact fc-red">Фотогалерея</h3>
+						</div>
+					</div>
+					<p class="text-center fc-gold" v-if="albums.length>0">
+						<a v-for="(album,index) in albums"
+							class="link mr-3"
+							:class="isSelectedAlbum(index)"
+							@click="selectAlbum(index)"
+							style="cursor:pointer"
+						>
+							{{album.title}}
+						</a>
+					</p>
+					<div class="row" v-if="albums.length>0">
+						<div class="col">
+							<img class="w-100 photo"
+								:src="albums[selectedAlbum].photos[selectedPhoto]">
+						</div>
+					</div>
+					<div class="align-items-center myrow w-100">
+						<div v-for="(photo, index) in albums[selectedAlbum].photos"
+							class="with-background-image selector photo"
+							:style="getStyle(photo)"
+							:class="isSelectedPhoto(index)"
+							@click="selectPhoto(index)"
+						></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer section fn-gothic fs-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-10 text-md-center">
+								<span class="footer-title">Навигиция по сайту</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a class="footer-link" href="">Гос символ</a><br>
+								<a class="footer-link" href="">Послание президента</a><br>
+								<a class="footer-link" href="">Вопросы психологу</a><br>
+							</div>
+							<div class="col-md-6">
+								<a class="footer-link" href="">Колледж</a><br>
+								<a class="footer-link" href="">Абитуриенту</a><br>
+								<a class="footer-link" href="">Студентам</a><br>
+								<a class="footer-link" href="">Преподавателям</a><br>
+								<a class="footer-link" href="">Документы</a><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="float-md-right">
+							<span class="footer-title float-md-right">Контакты</span><br>
+							<a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
+							<a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
+							<a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
+							<div class="links float-md-right">
+								<a href="">
+									<img width="21" height="21" src="assets/twitter.svg">
+								</a>
+								<a href="">
+									<img width="21" height="21" src="assets/youtube.svg">
+								</a>
+								<a href="https://www.facebook.com/ktsk.kopis/">
+									<img width="21" height="21" src="assets/facebook.svg">
+								</a>
+								<a href="">
+									<img width="21" height="21" src="assets/instagram.svg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				cursor: 0,
+				selectedAlbum: 0,
+				selectedPhoto: 0,
+				albums: [
+					{
+						title: 'Альбом-1',
+						photos: [
+							'assets/slide1.jpg',
+							'assets/slide2.jpg',
+							'assets/slide3.jpg',
+							'assets/slide4.jpg',
+							'assets/slide5.jpg',
+							'assets/slide6.jpg',
+							'assets/slide7.jpg',
+							'assets/slide8.jpg',
+						],
+					},
+					{
+						title: 'Альбом-2',
+						photos: [
+							'assets/slide2.jpg',
+							'assets/slide1.jpg',
+							'assets/slide4.jpg',
+							'assets/slide3.jpg',
+							'assets/slide5.jpg',
+							'assets/slide6.jpg',
+							'assets/slide7.jpg',
+							'assets/slide8.jpg',
+						],
+					},
+					{
+						title: 'Альбом-3',
+						photos: [
+							'assets/slide3.jpg',
+							'assets/slide4.jpg',
+							'assets/slide1.jpg',
+							'assets/slide2.jpg',
+							'assets/slide5.jpg',
+							'assets/slide6.jpg',
+							'assets/slide7.jpg',
+							'assets/slide8.jpg',
+						],
+					}
+				],
+			},
+			methods: {
+			  changeSelectedAlbum(number){
+			  	this.selectedAlbum = number
+			  },
+			  changeSelectedPhoto(number){
+			  	this.selectedPhoto = number
+			  },
+			  isSelectedAlbum(index){
+			  	return (index===this.selectedAlbum) ? 'fc-blue' : ''
+			  },
+			  isSelectedPhoto(index){
+			  	return (index===this.selectedPhoto) ? 'selected' : ''
+			  },
+			  selectAlbum(index){
+			  	this.selectedAlbum = index
+			  	this.selectedPhoto = 0
+			  	this.cursor = 0
+			  },
+			  selectPhoto(index){
+			  	this.selectedPhoto = index
+			  },
+			  getStyle(photo){
+			  	return "background-image: url('"+photo+"');"
+			  }
+			}
+		})
+    </script>
+    <style type="text/css">
+    	.selector{
+    		cursor: pointer;
+    		display:inline-block;
+    		width:133px;
+    		height:100px;
+    		margin-right: 10px;
+    	}
+    	.photo{
+    		box-shadow: 0px 0px 1px 0px grey;
+    		border-radius: 2px;
+    	}
+    	.myrow{
+    		white-space: nowrap;
+    		overflow: scroll;
+    		-webkit-overflow-scrolling: touch;
+    		padding-top:10px !important;
+    		padding-bottom:10px !important;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    		width:100%;
+    		height:130px;
+
+    	}
+    	.selected{
+    		box-shadow: 0px 0px 2px 0px blue;
+    	}
+    </style>
+</body>
+</html>
