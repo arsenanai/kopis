@@ -1,18 +1,29 @@
+if(typeof alb === 'undefined' || typeof api_key === 'undefined')
+    alert("Contact website admin to specify Youtube Channel And API Key")
+else{
 var app = new Vue({
     el: '#app',
     data: {
         cursor: 0,
         selectedAlbum: 0,
         albums: alb,
+        api_key: api_key,
     },
     created: function(){
-        if(this.albums.length>0)
-            this.albums.forEach(function (album, i) {
-                if(album.videos.length>0)
-                    album.videos.forEach(function (video, j){
-                        this.getTitleAndDuration(video)
-                    }.bind(this))
-            }.bind(this))
+        try{
+            if(this.albums.length>0)
+                this.albums.forEach(function (album, i) {
+                    if(album.videos.length>0)
+                        album.videos.forEach(function (video, j){
+                            this.getTitleAndDuration(video)
+                        }.bind(this))
+                }.bind(this))
+            else{
+                alert("Contact site admin to fullfill albums!")
+            }
+        }catch(err){
+            alert("Album format is incorrect")
+        }
     },
     methods: {
         changeSelectedAlbum: function(number) {
@@ -42,7 +53,7 @@ var app = new Vue({
             return 'https://www.youtube.com/embed/'+this.albums[this.selectedAlbum].videos[this.albums[this.selectedAlbum].selectedVideo].link
         },
         getTitleAndDuration: function(video){
-            axios.get('https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet%2C+contentDetails&id='+video.link+'&key=AIzaSyA682zBklG2iwiXVEJ9ZElSpSItjwAKc9k')
+            axios.get('https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet%2C+contentDetails&id='+video.link+'&key='+this.api_key)
                 .then(function(response){
                     var videosPage = response.data
                     video.title = videosPage.items[0].snippet.localized.title
@@ -62,3 +73,4 @@ var app = new Vue({
         },
     }
 })
+}

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KOPIS - Photos Page</title>
+	<title>KOPIS - News Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="assets/favicon.png" itemprop="image">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="src/photos.css">
+	<link rel="stylesheet" type="text/css" href="src/page.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700|Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
-	<style type="text/css">
-		[v-cloak] {display: none}
-	</style>
 </head>
 <body>
 	<div id="app">
@@ -62,34 +59,34 @@
 				          Колледж
 				        </a>
 				        <div class="dropdown-menu fs-xs" aria-labelledby="dr2">
-							<a class="dropdown-item fc-blue" href="news.html">Новости</a>
-							<a class="dropdown-item fc-blue" href="">Menu 2</a>
-							<a class="dropdown-item fc-blue" href="">Menu 3</a>
+				          <a class="dropdown-item fc-blue" href="news.html">Новости</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
+				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
 				        </div>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link fc-blue dropdown-toggle" href="" id="dr3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Абитуриентам</a>
-						<div class="dropdown-menu fs-xs" aria-labelledby="dr3">
-							<a class="dropdown-item fc-blue active" href="">Menu 1</a>
-							<a class="dropdown-item fc-blue" href="">Menu 2</a>
-							<a class="dropdown-item fc-blue" href="">Menu 3</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown active">
-						<a class="nav-link fc-blue dropdown-toggle" href="" id="dr4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
-						<div class="dropdown-menu fs-xs" aria-labelledby="dr4">
-							<a class="dropdown-item fc-blue active" href="photos.html">Фотогалерея</a>
-							<a class="dropdown-item fc-blue" href="videos.html">Видеогалерея</a>
-							<a class="dropdown-item fc-blue" href="videos2.html">Видеогалерея 2</a>
-							<a class="dropdown-item fc-blue" href="page.html">Простая страница</a>
-				    	</div>
-					</li>
 			      <li class="nav-item dropdown">
-			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Преподавателям</a>
-			        <div class="dropdown-menu fs-xs" aria-labelledby="dr5">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Абитуриентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr3">
 				          <a class="dropdown-item fc-blue active" href="">Menu 1</a>
 				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
 				          <a class="dropdown-item fc-blue" href="">Menu 3</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown active">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr4">
+						<a class="dropdown-item fc-blue" href="photos.html">Фотогалерея</a>
+						<a class="dropdown-item fc-blue" href="videos.html">Видеогалерея</a>
+						<a class="dropdown-item fc-blue" href="videos2.html">Видеогалерея 2</a>
+						<a class="dropdown-item fc-blue active" href="page.html">Простая страница</a>
+				    </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link fc-blue dropdown-toggle" href="" id="dr5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Преподавателям</a>
+			        <div class="dropdown-menu fs-xs" aria-labelledby="dr5">
+						<a class="dropdown-item fc-blue active" href="">Menu 1</a>
+						<a class="dropdown-item fc-blue" href="">Menu 2</a>
+						<a class="dropdown-item fc-blue" href="">Menu 3</a>
 				    </div>
 			      </li>
 			      <li class="nav-item dropdown">
@@ -110,54 +107,65 @@
 			  </div>
 			</div>
 		</nav>
-		<section id="photos" class="fn-gothic">
-			<div class="photos">
+		<!--news page-->
+		<section id="news" class="fn-gothic">
+			<div class="news">
 				<div class="container">
 					<div class="row">
 						<div class="col">
 							<nav aria-label="breadcrumb">
-							  <ol class="breadcrumb fs-sm fc-gold">
-							    <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Главная</a></li>
-							    <li class="breadcrumb-item">Студентам</li>
-							    <li class="breadcrumb-item active" aria-current="page">Фотографии</li>
+							  <ol class="breadcrumb fs-sm">
+							    <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Студентам</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Простая страница</li>
 							  </ol>
 							</nav>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col" style="margin-left:30px">
-							<h3 class="fn-impact fc-red">Фотогалерея</h3>
-						</div>
-					</div>
-					<div v-cloak>
-						<p class="text-center fc-gold" v-if="albums.length>0">
-							<a v-for="(album,index) in albums"
-								class="link mr-3"
-								:class="isSelectedAlbum(index)"
-								@click="selectAlbum(index)"
-								style="cursor:pointer"
-							>
-								{{album.title}}
-							</a>
-						</p>
-						<div class="row" v-if="albums.length>0">
-							<div class="col">
-								<img class="w-100 photo"
-									:src="albums[selectedAlbum].photos[albums[selectedAlbum].selectedPhoto]">
+						<div class="col-md-12">
+							<h2 class="fn-impact fc-red">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+							<p class="fc-gold fs-sm">Обновлено 24.03.2019, 02:12</p>
+							<div>
+								<p>
+									<img src="assets/slide1.jpg" class="w-100 float-left" >
+								</p>
+								<p>
+									Integer tempor scelerisque lacinia. Aliquam posuere enim eu ligula euismod, ac tincidunt magna tempus. Nam auctor neque turpis, at tincidunt lacus consequat ut.
+
+Aliquam laoreet mi libero, a tristique lorem suscipit a. Nullam rhoncus justo at arcu ultrices, eu pulvinar neque bibendum. In ac elit imperdiet, vestibulum metus nec, luctus quam. Sed quis orci sit amet leo accumsan convallis non et mi. Duis egestas est a risus placerat lacinia. Etiam hendrerit nisl justo, ac tincidunt velit molestie at. Donec mollis ex vel ultricies auctor. Nunc nec dui scelerisque, tincidunt nisl eget, ultricies sem. In vel semper arcu, a ornare ante. Nunc rutrum neque quam, vel tempor massa rutrum id. Donec auctor feugiat ex, vel porttitor est vehicula condimentum. Proin blandit sem ut ullamcorper egestas. Pellentesque vel quam non magna commodo ornare non id velit. Fusce lectus quam, dapibus a scelerisque in, bibendum vitae dui. Proin cursus nec orci et laoreet. Morbi mollis vitae orci sit amet faucibus.
+								</p>
+								<p class="lead">Lead 1</p>
+						<p><strong>Lorem</strong> <em>ipsum</em> <u>dolor</u> <mark>sit amet</mark>, <del>consectetur</del> adipiscing <abbr title="Elephant Library Italy Taiwan" class="initialism">ELIT</abbr>, sed do eiusmod tempor incididunt ut <a href="">labore et</a> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <a href="">ea commodo</a> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p class="lead">Lead 2</p>
+						<ul class="list-unstyled">
+						  <li>Lorem ipsum dolor sit amet</li>
+						  <li>Consectetur adipiscing elit</li>
+						  <li>Integer molestie lorem at massa</li>
+						  <li>Facilisis in pretium nisl aliquet</li>
+						  <li>Nulla volutpat aliquam velit
+						    <ul>
+						      <li>Phasellus iaculis neque</li>
+						      <li>Purus sodales ultricies</li>
+						      <li>Vestibulum laoreet porttitor sem</li>
+						      <li>Ac tristique libero volutpat at</li>
+						    </ul>
+						  </li>
+						  <li>Faucibus porta lacus fringilla vel</li>
+						  <li>Aenean sit amet erat nunc</li>
+						  <li>Eget porttitor lorem</li>
+						</ul>
+							<blockquote class="blockquote">
+							  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+							</blockquote>
 							</div>
-						</div>
-						<div class="align-items-center myrow w-100" v-if="albums.length>0">
-							<div v-for="(photo, index) in albums[selectedAlbum].photos"
-								class="with-background-image selector photo"
-								:style="getStyle(photo)"
-								:class="isSelectedPhoto(index)"
-								@click="selectPhoto(index)"
-							></div>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!--news page-->
 		<footer class="footer section fn-gothic fs-xs">
 			<div class="container">
 				<div class="row">
@@ -211,54 +219,5 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script type="text/javascript">
-    	const alb = 
-[
-	{
-		title: 'Альбом-1',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide1.jpg',
-			'assets/slide2.jpg',
-			'assets/slide3.jpg',
-			'assets/slide4.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	},
-	{
-		title: 'Альбом-2',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide2.jpg',
-			'assets/slide1.jpg',
-			'assets/slide4.jpg',
-			'assets/slide3.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	},
-	{
-		title: 'Альбом-3',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide3.jpg',
-			'assets/slide4.jpg',
-			'assets/slide1.jpg',
-			'assets/slide2.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	}
-];
-    </script>
-    <script src="src/photos.js"></script>
 </body>
 </html>
