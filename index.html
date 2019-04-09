@@ -8,20 +8,20 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="src/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700|Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed:700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<script type="text/javascript" src="src/index_loader.js"></script>
 </head>
 <body>
 	<div id="app">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white pt-0 pb-0" id="navbar">
 			<div class="container">
-			  	<a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="">
+			  	<a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="/">
 			  		<table>
 			  			<tr>
 			  				<td rowspan=3>
 			  					<img id="main-logo" src="assets/logo.svg" class="brand-logo">
 			  				</td>
-			  				<td class="fc-blue fn-impact fs-xl" style="padding-left: 10px;">
+			  				<td class="fc-blue fn-impact fs-xl" style="padding-left: 10px;line-height: 1;">
 			  					Колледж<br>
 						  		общественного<br>
 						  		питания и сервиса
@@ -33,7 +33,7 @@
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
-			  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn-gothic fs-xs">
+			  	<ul class="navbar-nav ml-auto my-2 my-lg-0 fn-gothic fs-xs" style="line-height:1;">
 		  		  <li class="nav-item">
 			        <a class="nav-link fc-gold" href="">Гос символ</a>
 			      </li>
@@ -43,8 +43,13 @@
 			      <li class="nav-item">
 			        <a class="nav-link fc-gold" href="">Вопросы психологу</a>
 			      </li>
+			      <li class="nav-item">
+			      	<a class="nav-link fc-gold" data-toggle="modal" data-target="#searchModal">
+  						<img src="assets/search.svg" height=16>
+					</a>
+			      </li>
 			      	<li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle fc-gold" href="" id="dr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        <a class="nav-link fc-gold" href="" id="dr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				          <img src="assets/globe.svg" height=16>
 				        </a>
 				        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr1">
@@ -54,11 +59,9 @@
 				        </div>
 			    	</li>
 			    </ul>
-			    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn-impact fs-lg">
+			    <ul class="navbar-nav ml-auto my-2 my-lg-0 fn-impact fs-xl" style="line-height:1;">
 			      	<li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle fc-blue" href="" id="dr2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				          Колледж
-				        </a>
+				        <a class="nav-link dropdown-toggle fc-blue" href="" id="dr2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Колледж</a>
 				        <div class="dropdown-menu fs-xs" aria-labelledby="dr2">
 				          <a class="dropdown-item fc-blue" href="news.html">Новости</a>
 				          <a class="dropdown-item fc-blue" href="">Menu 2</a>
@@ -99,19 +102,13 @@
 				    </div>
 			      </li>
 			    </ul>
-			    <form class="form-inline ml-auto my-2 my-lg-0 fn-gothic fs-xs">
-			      <input class="form-control mr-sm-2 fc-gold " type="search" placeholder="Поиск" aria-label="Поиск">
-			      <button class="btn btn-light my-2 my-sm-0 fc-gold" type="submit">
-			      	<img src="assets/search.svg" height=16>
-			      </button>
-			    </form>
 			  </div>
 			</div>
 		</nav>
 		<section id="main-carousel">
 			<div class="">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				  <ol class="carousel-indicators">
+				  <ol class="carousel-indicators" style="bottom: -20px">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -166,114 +163,119 @@
 			</div>
 		</section>
 		<section id="news" class="pr-3 pl-3 sc-bc-blue">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row fn-gothic">
-					<div class="col-md-9">
+					<div class="col-xl-9">
 						<p class="text-center fs-xxl fc-red fn-impact">Новости и события</p>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="card mt-4 mb-4 card-news">
-							      <div class="row ">
-							        <div class="col-lg-6">
-							        	<div class="with-background-image card-img-top" 
-							        	style="background-image:url('assets/slide4.jpg'); "></div>
-							        </div>
-							          <div class="col-lg-6">
-							            <div class="card-block pt-2 pr-2 pb-2">
-							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
-							              <div class="card-text overflow-hidden fs-xs">
-							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
-							              </div>
-							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
-							              	<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
-							            </div>
-							          </div>
-
-							        </div>
-							      </div>
-							      <div class="card mt-4 mb-4 card-news">
-							      <div class="row ">
-							        <div class="col-lg-6">
-							        	<div class="with-background-image card-img-top" 
-							        	style="background-image:url('assets/slide4.jpg'); "></div>
-							        </div>
-							          <div class="col-lg-6">
-							            <div class="card-block pt-2 pr-2 pb-2">
-							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
-							              <div class="card-text overflow-hidden fs-xs">
-							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
-							              </div>
-							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
-							              	<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
-							            </div>
-							          </div>
-
-							        </div>
-							      </div>
+									<div class="row">
+									    <div class="col-lg-6">
+									    	<div class="with-background-image card-img-top" 
+									    	style="background-image:url('assets/slide4.jpg'); "></div>
+									    </div>
+										<div class="col-lg-6">
+											<div class="card-block pt-2 pr-2 pb-2">
+											  	<h4 class="card-title fs-sm fc-red"><strong>3 курс студенті АКД-273 тобының студенттеріне “Қарақат зефирі” және “Профитроль” дайындау жолдарын көрсетті.</strong></h4>
+												<div class="card-bottom">
+													<div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+													<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							    <div class="card mt-4 mb-4 card-news">
+									<div class="row">
+									    <div class="col-lg-6">
+									    	<div class="with-background-image card-img-top" 
+									    	style="background-image:url('assets/slide5.jpg'); "></div>
+									    </div>
+										<div class="col-lg-6">
+											<div class="card-block pt-2 pr-2 pb-2">
+											  	<h4 class="card-title fs-sm fc-red"><strong>29.03.19 Был Мастер – класс</strong></h4>
+												<div class="card-bottom">
+													<div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+													<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="card mt-4 mb-4 card-news">
-							      <div class="row ">
-							        <div class="col-lg-6">
-							        	<div class="with-background-image card-img-top" 
-							        	style="background-image:url('assets/slide4.jpg'); "></div>
-							        </div>
-							          <div class="col-lg-6">
-							            <div class="card-block pt-2 pr-2 pb-2">
-							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
-							              <div class="card-text overflow-hidden fs-xs">
-							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
-							              </div>
-							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
-							              	<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
-							            </div>
-							          </div>
-
-							        </div>
-							      </div>
-							      <div class="card mt-4 mb-4 card-news">
-							      <div class="row ">
-							        <div class="col-lg-6">
-							        	<div class="with-background-image card-img-top" 
-							        	style="background-image:url('assets/slide4.jpg'); "></div>
-							        </div>
-							          <div class="col-lg-6">
-							            <div class="card-block pt-2 pr-2 pb-2">
-							              <h4 class="card-title fs-sm text-center fc-red"><strong>Lorem ipsum dolor sit amet...</strong></h4>
-							              <div class="card-text overflow-hidden fs-xs">
-							              	Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua
-							              </div>
-							              <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
-							              	<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
-							            </div>
-							          </div>
-
-							        </div>
-							      </div>
+									<div class="row">
+									    <div class="col-lg-6">
+									    	<div class="with-background-image card-img-top" 
+									    	style="background-image:url('assets/slide6.jpg'); "></div>
+									    </div>
+										<div class="col-lg-6">
+											<div class="card-block pt-2 pr-2 pb-2">
+											  	<h4 class="card-title fs-sm fc-red"><strong>А. Жетенова тауық қанаттарын, нагеттстер, тауық сан еті, тауықтан орама дайындау технологиясын көрсетті.</strong></h4>
+												<div class="card-bottom">
+													<div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+													<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							    <div class="card mt-4 mb-4 card-news">
+									<div class="row">
+									    <div class="col-lg-6">
+									    	<div class="with-background-image card-img-top" 
+									    	style="background-image:url('assets/slide7.jpg'); "></div>
+									    </div>
+										<div class="col-lg-6">
+											<div class="card-block pt-2 pr-2 pb-2">
+											  	<h4 class="card-title fs-sm fc-red"><strong>Біздің студенттер нан өнімдерін дайындады</strong></h4>
+												<div class="card-bottom">
+													<div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+													<a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-red">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 fn-gothic fs-md">
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/flag.svg" width=30> Государственные символы</a>
-						</div>
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/manifest.svg" width=30> Послание Президента</a>
-						</div>
+					<div class="col-xl-3 fn-gothic fs-md">
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;">
+								<img src="assets/flag.svg" width=30>
+							</div>
+							<div>
+								Государственные символы
+							</div>
+						</a>
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;">
+								<img src="assets/manifest.svg" width=30>
+							</div>
+							<div>
+								Послание Президента
+							</div>
+						</a>
 						<div class="fn-impact fs-lg fc-red mb-3">Полезные ссылки</div>
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр медико-социальной реабилитации</a>
-						</div>
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр проблем психического здоровья</a>
-						</div>
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр дерматологии Астаны</a>
-						</div>
-						<div class="mb-3">
-							<a href="" class="text-dark"><img src="assets/heart.svg" width=30> Центр профилактики и борьбы со СПИДом</a>
-						</div>
-
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;"><img src="assets/heart.svg" width=30></div>
+							<div>Центр медико-социальной реабилитации</div>
+						</a>
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;"><img src="assets/heart.svg" width=30></div>
+							<div>Центр проблем психического здоровья</div>
+						</a>
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;"><img src="assets/heart.svg" width=30></div>
+							<div>Центр дерматологии Астаны</div>
+						</a>
+						<a href="" class="mb-3 text-dark d-flex align-items-start">
+							<div style="min-width:35px;"><img src="assets/heart.svg" width=30></div>
+							<div>Центр профилактики и борьбы со СПИДом</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -298,11 +300,18 @@
 		</section>
 		<section id="videos" class="fn-impact sc-bc-blue">
 			<p class="text-center fs-xxl fc-red">Наши видео</p>
-			<div class="container-fluid">
-				<div class="align-items-center text-center">
-					<iframe class="video"
-						src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
-					</iframe>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 d-flex align-items-center text-center">
+						<iframe class="video"
+							src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+					<div class="col-lg-6 d-flex align-items-center text-center">
+						<iframe class="video"
+							src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -385,11 +394,6 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-md-10 text-md-center">
-								<span class="footer-title">Навигиция по сайту</span>
-							</div>
-						</div>
-						<div class="row">
 							<div class="col-md-6">
 								<a class="footer-link" href="">Гос символ</a><br>
 								<a class="footer-link" href="">Послание президента</a><br>
@@ -464,6 +468,27 @@
 	  </table>
 	</div>
 	</template>
+	<div class="modal fade" id=searchModal tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog modal-lg" role="document">
+	    <div class="modal-content" style="">
+	      <!--<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>-->
+	      	<form class="modal-body p-0">
+	      	<div class="input-group">
+	      		<div class="input-group-prepend">
+    				<span class="input-group-text" id="basic-addon1">
+    					<img src="assets/search.svg" height=16>
+    				</span>
+  				</div>
+			  <input type="text" class="form-control" placeholder="Поиск" aria-label="Recipient's username" aria-describedby="basic-addon2">
+			</div>
+			</form>
+	    </div>
+	  </div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

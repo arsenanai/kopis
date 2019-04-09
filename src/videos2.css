@@ -111,58 +111,121 @@ a.fc-gold:hover,
 	background-color: #02AEEE
 }
 
-@media (min-width:992px) {
-	.brand-logo {
-		width: 118px
-	}
-	.fs-xxxl {
-		font-size: 50px
-	}
-	.fs-xxl {
-		font-size: 40px
-	}
-	.fs-xl {
-		font-size: 26px
-	}
-	.fs-lg {
-		font-size: 18px
-	}
-	.fs-md {
-		font-size: 16px
-	}
-	.fs-sm {
-		font-size: 14px
-	}
-	.fs-xs {
-		font-size: 12px
-	}
+@media (max-width:767.98px){
+    .brand-logo{
+        height:48px;
+    }
+    .fs-xxxl{
+        font-size:30px
+    }
+    .fs-xxl{
+        font-size:20px
+    }
+    .fs-xl{
+        font-size:16px
+    }
+    .fs-lg{
+        font-size:14px
+    }
+    .fs-md{
+        font-size:14px
+    }
+    .fs-sm{
+        font-size:13px
+    }
+    .fs-xs{
+        font-size:12px
+    }
+    .card-img-top{
+        min-height: 50vw;
+    }
 }
-
-@media (max-width:992px) {
-	.brand-logo {
-		width: 59px
-	}
-	.fs-xxxl {
-		font-size: 30px
-	}
-	.fs-xxl {
-		font-size: 20px
-	}
-	.fs-xl {
-		font-size: 16px
-	}
-	.fs-lg {
-		font-size: 14px
-	}
-	.fs-md {
-		font-size: 14px
-	}
-	.fs-sm {
-		font-size: 13px
-	}
-	.fs-xs {
-		font-size: 12px
-	}
+@media (min-width: 768px) {
+    .brand-logo{
+        width:48px
+    }
+    .fs-xxxl{
+        font-size:30px
+    }
+    .fs-xxl{
+        font-size:20px
+    }
+    .fs-xl{
+        font-size:16px
+    }
+    .fs-lg{
+        font-size:14px
+    }
+    .fs-md{
+        font-size:14px
+    }
+    .fs-sm{
+        font-size:13px
+    }
+    .fs-xs{
+        font-size:12px
+    }
+    .card-img-top{
+        min-height: 40vw;
+    }
+}
+@media (min-width:992px){
+    .brand-logo{
+        width:66px
+    }
+    .fs-xxxl{
+        font-size:50px
+    }
+    .fs-xxl{
+        font-size:40px
+    }
+    .fs-xl{
+        font-size:22px
+    }
+    .fs-lg{
+        font-size:18px
+    }
+    .fs-md{
+        font-size:16px
+    }
+    .fs-sm{
+        font-size:14px
+    }
+    .fs-xs{
+        font-size:12px
+    }
+    .card-img-top{
+        min-height: 30vw;
+    }
+}
+@media (min-width: 1200px) {
+    .brand-logo{
+        width:74px
+    }
+    .fs-xxxl{
+        font-size:50px
+    }
+    .fs-xxl{
+        font-size:40px
+    }
+    .fs-xl{
+        font-size:24px
+    }
+    .fs-lg{
+        font-size:18px
+    }
+    .fs-md{
+        font-size:16px
+    }
+    .fs-sm{
+        font-size:14px
+    }
+    .fs-xs{
+        font-size:12px
+    }
+    .card-img-top{
+        min-height: 12vw;
+    }
 }
 
 .footer {
@@ -252,7 +315,7 @@ div.links a {
 	margin-left: 2px;
 	border-bottom-left-radius: 6vw;
 	border-bottom-right-radius: 6vw;
-	padding-bottom: 40px
+	padding-bottom: 40px;
 }
 
 .breadcrumb {
@@ -344,17 +407,20 @@ li.page-item.active a.page-link {
 }
 
 .selected {
-	box-shadow: 0 0 2px 0 #02AEEE !important;
+	box-shadow: 5px 5px #02AEEE !important;
 }
-
-.video-holder{
-	margin-bottom: 50px;
+.video-holder {
+    box-shadow:5px 5px #7c0000;
+    border:0px;
+    border-radius:16px;
+    margin-bottom: 50px;
 }
-.video {
-	box-shadow: 0 0 1px 0 #736357;
-	border-radius: 2px;
-	width:200px;
-	height:108px;
+.video{
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	width:232px;
+	height:130px;
+	cursor:pointer;
 }
 .title{
 	width: 155px;
@@ -393,4 +459,11 @@ li.page-item.active a.page-link {
 .modal-header .close {
     padding: 5px 5px 5px 5px;
     margin: 0rem 0rem 0rem auto;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right:0rem;
+}
+.dropdown-toggle::after {
+    content:none;
+    margin-left:0px;
 }
