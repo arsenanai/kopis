@@ -117,7 +117,9 @@
 				    <div class="carousel-item active">
 				    	<div class="bezel overflow-hidden">
 				    		<div class="with-background-image main-carousel-image" 
-					    	style="background-image:url('assets/slide1.jpg');"></div>
+					    	style="background-image:url('assets/slide1.jpg');background-position: 50% 0px;"
+					    	data-speed="1.5" data-type="background"
+					    	></div>
 					    	<div class="carousel-caption fc-red">
 					    		<div class="container">
 					    			<div class="fs-xl text-left">Достойное образование - успешная карьера!</div>
@@ -129,7 +131,9 @@
 				    <div class="carousel-item">
 				    	<div class="bezel overflow-hidden">
 				    		<div class="with-background-image main-carousel-image" 
-					    	style="background-image:url('assets/slide7.jpg');"></div>
+					    	style="background-image:url('assets/slide7.jpg');"
+					    	data-speed="1.5" data-type="background"
+					    	></div>
 					    	<div class="carousel-caption fc-red">
 					    		<div class="container">
 					    			<div class="fs-xl text-left">Достойное образование - успешная карьера!</div>
@@ -141,7 +145,9 @@
 				    <div class="carousel-item">
 				    	<div class="bezel overflow-hidden">
 				    		<div class="with-background-image main-carousel-image" 
-					    	style="background-image:url('assets/slide3.jpg');"></div>
+					    	style="background-image:url('assets/slide3.jpg');"
+					    	data-speed="1.5" data-type="background"
+					    	></div>
 					    	<div class="carousel-caption fc-red">
 					    		<div class="container">
 					    			<div class="fs-xl text-left">Достойное образование - успешная карьера!</div>
@@ -437,27 +443,29 @@
 	<template id="calendar">
 	  <div class="calendar-holder">
 	  
-	  <table class="calendar text-center fn-roboto calendar transitionable fs-sm mr-auto ml-auto">
-	  	<tbody>
+	  <table class="calendar text-center fn-roboto fs-sm mr-auto ml-auto">
+	  	<thead>
 	  		<tr>
-	  			<td colspan=5 class="fn-impact align-middle fc-red fs-xl">
+	  			<td colspan=5 class="fn-impact align-middle fc-red fs-xl text-right">
 					{{ currMonthLabel }} {{ currYear }}
 	  			</td>
 	  			<td colspan=2 class="align-middle">
 	  				<div class="btn-group" role="group" aria-label="Basic example">
-					  <button type="button" class="btn btn-sm bc-blue text-white" @click="previousMonth">
+					  <a class="text-white" style="cursor:pointer;" @click="previousMonth">
 					  	<img src="assets/left.svg" height="25">
-					  </button>
-					  <button type="button" class="btn btn-sm bc-blue text-white" @click="nextMonth">
+					  </a>
+					  <a class="text-white" style="cursor:pointer;" @click="nextMonth">
 					  	<img src="assets/right.svg" height="25">
-					  </button>
+					  </a>
 					</div>
 	  			</td>
 	  		</tr>
-	  		<tr>
+	  		<tr class="transitionable">
 	  			<td v-for="dayLabel in dayLabels"><strong>{{ dayLabel }}</strong></td>
 	  		</tr>
-	  		<tr v-for="n in weeks">
+	  	</thead>
+	  	<tbody id="calendar-body" class="animated">
+	  		<tr v-for="n in weeks" class="">
 	  			<td v-for="(date, di) in datesArray(n-1)" class="date" @click="setSelectedDate(date)">
 	  				<span :class="dayClassObj(date)">
 				      {{ date.date | formatDateToDay }}
@@ -490,6 +498,21 @@
 	  </div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $window = $(window);
+			$(window).scroll(function() {
+	        	if($window.scrollTop()<=718){
+	        		$('.main-carousel-image[data-type="background"]').each(function(){
+		        		var $bgobj = $(this);
+	        			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+		            	var coords = '50% '+ yPos + 'px';
+		            	$bgobj.css({ backgroundPosition: coords });
+		            });
+	        	}
+	        });  
+		});
+	</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

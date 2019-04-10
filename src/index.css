@@ -249,7 +249,11 @@ a.fc-blue:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-    background-position:center center
+    background-position:center center;
+}
+.main-carousel-image{
+    background-attachment: fixed;
+    position: relative!important;
 }
 .transitionable{
     -webkit-transition:all .3s;

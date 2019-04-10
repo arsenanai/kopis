@@ -66,10 +66,10 @@ a.fc-gold:hover,.fc-gold::placeholder{
     color:rgb(100,100,100)!important
 }
 .fn-gothic{
-    font-family:'Open Sans',sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 .fn-impact{
-    font-family:'Open Sans Condensed',sans-serif
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .fn-roboto{
     font-family:"Roboto",sans-serif

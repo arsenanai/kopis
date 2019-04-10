@@ -27,7 +27,11 @@ div.links a{
     background-color:#7c0000
 }
 .calendar-holder{
-    min-height:179px
+    position:relative;
+    min-height:179px;
+}
+.calendar-holder, .calendar{
+    overflow: hidden;
 }
 .calendar .date{
     cursor:pointer
@@ -131,4 +135,10 @@ div.links a{
         border-bottom-left-radius:100px;
         border-bottom-right-radius:100px
     }
+}
+.animated{
+    -webkit-transition:all 0.1s ease;
+    -moz-transition:all 0.1s ease;
+    -o-transition:all 0.1s ease;
+    transition:all 0.1s ease;
 }

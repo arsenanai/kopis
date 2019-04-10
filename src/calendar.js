@@ -49,10 +49,24 @@ const Calendar = Vue.component('calendar', {
 	      };
 	    },
 	    nextMonth() {
-	      this.currDateCursor = dateFns.addMonths(this.currDateCursor, 1);
+	    	var body = document.getElementById("calendar-body");
+	    	body.classList.remove('animated');
+	    	body.style.transform = "translateX(100%)"
+	    	this.currDateCursor = dateFns.addMonths(this.currDateCursor, 1);
+	    	setTimeout(function(){
+	    		body.classList.add('animated');
+	      		body.style.transform = "translateX(0px)"
+	      	}, 1);
 	    },
 	    previousMonth() {
-	      this.currDateCursor = dateFns.addMonths(this.currDateCursor, -1);
+	    	var body = document.getElementById("calendar-body");
+	    	body.classList.remove('animated');
+	    	body.style.transform = "translateX(-100%)"
+	    	this.currDateCursor = dateFns.addMonths(this.currDateCursor, -1);
+	    	setTimeout(function(){
+    			body.classList.add('animated');
+    			body.style.transform = "translateX(0px)"
+			}, 1);
 	    },
 	    setSelectedDate(date) {
 	      this.selectedDate = date.date;

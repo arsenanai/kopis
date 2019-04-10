@@ -88,12 +88,11 @@ a.fc-gold:hover,
 	color: rgb(100, 100, 100)!important
 }
 
-.fn-gothic {
-	font-family: 'Open Sans', sans-serif
+.fn-gothic{
+	font-family: 'Montserrat', sans-serif;
 }
-
-.fn-impact {
-	font-family: 'Open Sans Condensed', sans-serif
+.fn-impact{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .fn-roboto {
