@@ -338,3 +338,12 @@ a.fc-blue:hover{
 .carousel-caption .text-left{
 	width:60vw;
 }
+.carousel-caption .text-left{
+    width:60vw;
+}
+.navbar-nav, .brand-name{
+    line-height:1;
+}
+.brand-name{
+    padding-left: 10px;
+}
