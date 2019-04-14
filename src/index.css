@@ -13,7 +13,7 @@ body,html{
     width:100%;
     clear:both
 }
- .navbar{
+.navbar{
     border-bottom:15px solid #7c0000;
     box-shadow:0 5px rgba(219,162,107,.9)
 }
@@ -66,7 +66,7 @@ a.fc-blue:hover{
     color:#646464!important
 }
 .fn-gothic{
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .fn-impact{
     font-family: 'Roboto Condensed', sans-serif;
@@ -108,11 +108,11 @@ a.fc-blue:hover{
         font-size:12px
     }
     .card-img-top{
-    	min-height: 50vw;
+        min-height: 50vw;
     }
 }
 @media (min-width: 768px) {
-	.brand-logo{
+    .brand-logo{
         width:48px
     }
     .fs-xxxl{
@@ -137,7 +137,7 @@ a.fc-blue:hover{
         font-size:12px
     }
     .card-img-top{
-    	min-height: 20vw;
+        min-height: 20vw;
     }
 }
 @media (min-width:992px){
@@ -166,11 +166,11 @@ a.fc-blue:hover{
         font-size:12px
     }
     .card-img-top{
-    	min-height: 15vw;
+        min-height: 15vw;
     }
 }
 @media (min-width: 1200px) {
-	.brand-logo{
+    .brand-logo{
         width:74px
     }
     .fs-xxxl{
@@ -195,7 +195,7 @@ a.fc-blue:hover{
         font-size:12px
     }
     .card-img-top{
-    	min-height: 12vw;
+        min-height: 12vw;
     }
 }
 .section,section{
@@ -279,7 +279,7 @@ a.fc-blue:hover{
         border-top-left-radius:250px 125px
     }
     #videos{
-    	padding-bottom: 125px;
+        padding-bottom: 125px;
         border-bottom-left-radius:250px 125px
     }
     .mt-39{
@@ -298,6 +298,7 @@ a.fc-blue:hover{
 }
 .video{
     width:100%;
+    height: 305px;
 }
 #news{
     margin-top:10px;
@@ -305,20 +306,23 @@ a.fc-blue:hover{
     box-shadow:-10px 0 #7c0000
 }
 .card-block{
-	position: relative;
-	height: 100%;
+    position: relative;
+    height: 90%;
+    padding: 0 !important;
+    left: -15px;
+    top: 15px;
 }
 .card-bottom{
-	position: absolute;
-	left:0;
-	bottom:0;
-	width:100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
 }
 @media (max-width:991.98px){
-	.card-block, .card-bottom{
-		padding-left: 16px;
-		padding-right: 16px;
-	}
+    .card-block, .card-bottom{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .card-img-top{
         border-top-left-radius:16.46px;
         border-top-right-radius:16.46px;
@@ -336,7 +340,7 @@ a.fc-blue:hover{
     margin-left:0px;
 }
 .carousel-caption .text-left{
-	width:60vw;
+    width:60vw;
 }
 .carousel-caption .text-left{
     width:60vw;
@@ -346,4 +350,102 @@ a.fc-blue:hover{
 }
 .brand-name{
     padding-left: 10px;
+}
+h4.card-title.fs-sm.fc-red {
+    line-height: 1.5em;
+}
+
+.nav-item.dropdown {
+    padding-left: 15px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.dropdown li:hover > a, .dropdown li > ul li:hover a {
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #02aeee;
+}
+
+.dropdown-item a {
+    font-weight: normal;
+}
+
+.dropdown-menu a.dropdown-item.fc-blue {
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.third-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    margin: 0;
+    padding: 15px 0;
+}
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu li:hover .third-dropdown {
+    display: block;
+}
+.dropdown-menu li .third-dropdown a {
+    color: #02aeee!important;
+}
+.dropdown-menu li:hover .third-dropdown a {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    border: 0;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 5px 1.5rem;
+}
+a.footer-link {
+    font-size: 17px;
+}
+.social-links {
+    margin-top: 15px;
+}
+
+.footer{
+    background-color:#e5ecf6
+}
+@media (min-width:992px){
+    .footer{
+        background-image:url(../assets/lenta.svg),url(../assets/logo.svg);
+        background-position:-1mm 101%,50% 75%;
+        background-repeat:no-repeat,no-repeat;
+        background-size:101% auto, 200px 200px;
+        padding-bottom:350px;
+        margin-bottom:0
+    }
 }
