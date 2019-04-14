@@ -1,16 +1,3 @@
-.footer{
-    background-color:#e5ecf6
-}
-@media (min-width:992px){
-    .footer{
-        background-image:url(../assets/lenta.svg),url(../assets/logo.svg);
-        background-position:-1mm 101%,50% 75%;
-        background-repeat:no-repeat,no-repeat;
-        background-size:101% auto, 200px 200px;
-        padding-bottom:350px;
-        margin-bottom:0
-    }
-}
 div.links a{
     display:inline-block
 }
@@ -97,24 +84,21 @@ div.links a{
     border-bottom-right-radius:65px
 }
 .partners-image{
-    height:20vw;
-    width:100%
+    height: 11vw;
+    width:100%;
 }
 .partners-wrapper{
-    border-radius:6vw
+    border-radius: 40px;
 }
 #partners-carousel{
-    border-radius:5vw;
-    z-index:1
+    border-radius: 30px;
+    z-index:1;
 }
 #partners img{
-    width:4vw
+    width: 50px
 }
 .partners-wrapper{
-    padding-top:1vw;
-    padding-bottom:1vw;
-    padding-left:1vw;
-    padding-right:1vw;
+    padding: 10px;
     background-image:linear-gradient(to right,rgba(152,28,31,.75),rgba(142,35,33,.63) 11%,rgba(116,53,38,.33) 31%,rgba(88,73,44,0) 52%,#1b4b81);
     background-position:0 0;
     background-repeat:no-repeat;
@@ -141,4 +125,7 @@ div.links a{
     -moz-transition:all 0.1s ease;
     -o-transition:all 0.1s ease;
     transition:all 0.1s ease;
+}
+.carousel-indicators {
+    display: none;
 }

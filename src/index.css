@@ -435,3 +435,17 @@ a.footer-link {
 .social-links {
     margin-top: 15px;
 }
+
+.footer{
+    background-color:#e5ecf6
+}
+@media (min-width:992px){
+    .footer{
+        background-image:url(../assets/lenta.svg),url(../assets/logo.svg);
+        background-position:-1mm 101%,50% 75%;
+        background-repeat:no-repeat,no-repeat;
+        background-size:101% auto, 200px 200px;
+        padding-bottom:350px;
+        margin-bottom:0
+    }
+}
