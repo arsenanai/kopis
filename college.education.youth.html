@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KOPIS - Default Template Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="assets/favicon.png" itemprop="image">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
+    <link rel="stylesheet" type="text/css" href="src/page.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed:700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-0 pb-0" id="navbar">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="index.html">
+                <table>
+                    <tr>
+                        <td rowspan=3>
+                            <img id="main-logo" src="assets/logo.svg" class="brand-logo">
+                        </td>
+                        <td class="fc-blue fn-impact fs-xl" style="padding-left: 10px;line-height: 1;">
+                            Колледж<br>
+                            общественного<br>
+                            питания и сервиса
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0 fn-gothic fs-xs" style="line-height:1;">
+                    <li class="nav-item">
+                        <a class="nav-link fc-gold" href="">Гос символ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fc-gold" href="">Послание президента</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fc-gold" href="">Вопросы психологу</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fc-gold" data-toggle="modal" data-target="#searchModal">
+                            <img src="assets/search.svg" height=16>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fc-gold" href="" id="dr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/globe.svg" height=16>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr1">
+                            <a class="dropdown-item fc-gold" href="">Қазақ</a>
+                            <a class="dropdown-item fc-gold" href="">English</a>
+                            <a class="dropdown-item fc-gold active" href="">Русский</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto my-2 my-lg-0 fn-impact fs-xl" style="line-height:1;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fc-blue" href="" id="dr2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Колледж</a>
+                        <ul class="dropdown-menu fs-xs" aria-labelledby="dr2">
+                            <li><a class="dropdown-item fc-blue" href="news.html">Жаңалықтар</a></li>
+                            <li><a class="dropdown-item fc-blue" href="">Колледж туралы</a>
+                                <ul class="third-dropdown">
+                                    <li><a href="college.about.plan.html">Колледждің жұмыс жоспары</a></li>
+                                    <li><a href="">Колледждің стратегиялық жоспары</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item fc-blue" href="college.management.html">Колледж басшылығы</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.collective.html">Біздің ұжым</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.accredit.html">Аккредиттеу</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.studprocess.quality.html">Оқу үрдісі</a>
+                                <ul class="third-dropdown">
+                                    <li><a href="college.studprocess.quality.html">Білім сапасы бойынша қорытынды</a></li>
+                                    <li><a href="college.studprocess.dual.html">Дуалды оқыту</a></li>
+                                    <li><a href="college.studprocess.estim.html">Сыртқы бағалау қорытындысы</a></li>
+                                    <li><a href="college.studprocess.groups.html">Оқу топтары </a></li>
+                                    <li><a href="college.studprocess.schedule.html">Оқу үрдісінің кестесі</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item fc-blue" href="college.production.html">Оқу өндірістік жұмысы</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.education.events.html">Тәрбие жұмысы</a>
+                                <ul class="third-dropdown">
+                                    <li><a href="college.education.events.html">Іс-шаралар</a></li>
+                                    <li><a href="college.education.inner.html">Ішкі тәртіп ережелері</a></li>
+                                    <li><a href="college.education.psycho.html">Психологиялық қызмет </a></li>
+                                    <li><a href="college.education.youth.html">Жастар ісі жөніндегі комитеті </a></li>
+                                    <li><a href="college.education.sport.html">Спорттық секциялар</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item fc-blue" href="college.methodical.plan.html">Оку-әдістемелік жұмысы</a>
+                                <ul class="third-dropdown">
+                                    <li><a href="college.methodical.plan.html">Жұмыс жоспары</a></li>
+                                    <li><a href="college.methodical.complex.html">Оқу-әдістемелік жиынтығы</a></li>
+                                    <li><a href="college.methodical.proposal.html">Әдістемелік ұсынымдар  </a></li>
+                                    <li><a href="college.methodical.competition.html">Сайыстар</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item fc-blue" href="college.35.html">Белестерді бағындырған 35</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.achieve.html">Жетістіктер</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.unity.html">Халықаралық ынтымақтастық</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.smj.html">СМЖ</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.social.html">Әлеуметтік серіктестер</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.graduate.html">Түлектер қауымдастығы</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.govservices.html">Мемлекеттік қызметтерді алу тәртібі</a></li>
+                            <li><a class="dropdown-item fc-blue" href="photos.html">Фотогаллерея</a></li>
+                            <li><a class="dropdown-item fc-blue" href="videos2.html">Видеоматериалдар</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.feedback.html">Кері байланыс</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.contact.html">Байланыс</a></li>
+                            <li><a class="dropdown-item fc-blue" href="college.announcement.html">Хабарландырулар</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fc-blue dropdown-toggle" href="enrollee.apply.html" id="dr3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Талапкерге</a>
+                        <ul class="dropdown-menu fs-xs" aria-labelledby="dr3">
+                            <li><a class="dropdown-item fc-blue" href="enrollee.apply.html">Онлайн өтінім беру </a></li>
+                            <li><a class="dropdown-item fc-blue" href="enrollee.profession.html">Мамандықтар</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fc-blue dropdown-toggle" href="student.schedule.html" id="dr4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентке</a>
+                        <ul class="dropdown-menu fs-xs" aria-labelledby="dr4">
+                            <a class="dropdown-item fc-blue" href="student.schedule.html">Сабақ кестесі</a>
+                            <a class="dropdown-item fc-blue" href="student.exams.html">Емтихан сессиясының кестесі</a>
+                            <a class="dropdown-item fc-blue" href="student.club.html">Студенттерге арналған үйірмелер кестесі</a>
+                            <a class="dropdown-item fc-blue" href="student.vacancy.html">Бос жұмыс орындары</a>
+                            <a class="dropdown-item fc-blue" href="student.phsyco.html">Психологқа сұрақ</a>
+                            <a class="dropdown-item fc-blue" href="student.newby.html">1 курс студентінің жолсілтегіші</a>
+                            <a class="dropdown-item fc-blue" href="student.hostel.html">Жатақхана </a>
+                            <a class="dropdown-item fc-blue" href="student.code.html">Ар намыс кодексі</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fc-blue dropdown-toggle" href="teachers.public.html" id="dr5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Оқытушыға</a>
+                        <ul class="dropdown-menu fs-xs" aria-labelledby="dr5">
+                            <a class="dropdown-item fc-blue" href="teachers.public.html">Ашық сабақтар</a>
+                            <a class="dropdown-item fc-blue" href="teachers.video.html">Ашық видео  сабақтар</a>
+                            <a class="dropdown-item fc-blue" href="teachers.training.html">Біліктілікті көтеру</a>
+                            <a class="dropdown-item fc-blue" href="teachers.methodic.html">Әдістемелік кабинет</a>
+                            <a class="dropdown-item fc-blue" href="teachers.best.html">Үздік жыл оқытушысы</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fc-blue dropdown-toggle" href="docs.tender.html" id="dr6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Құжаттар</a>
+                        <ul class="dropdown-menu dropdown-menu-right fs-xs" aria-labelledby="dr6">
+                            <a class="dropdown-item fc-blue" href="docs.tender.html">Мемлекеттік сатып алу </a>
+                            <a class="dropdown-item fc-blue" href="docs.npa.html">Нормативті құқықтық актілер</a>
+                            <a class="dropdown-item fc-blue" href="docs.budjet.html">Ашық бюджет</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--news page-->
+    <section id="content" class="fn-gothic">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb fs-sm">
+                                <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Колледж</a></li>
+                                <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Тәрбие жұмысы</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Жастар ісі жөніндегі комитеті</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8">
+                        <h2 class="fn-impact fc-red">ҚОҒАМДЫҚ ТАМАҚТАНДЫРУ ЖӘНЕ СЕРВИС КОЛЛЕДЖІНІҢ ТОП ЖЕТЕКШІЛЕРІ ӘДІСТЕМЕЛІК БІРЛЕСТІГІ ТУРАЛЫ ЕРЕЖЕ</h2>
+                        <p class="fc-gold fs-sm">Жаңартылған күні 09.04.2019</p>
+
+                        <div class="blog-thumbnail-context"><p><strong>ҚОҒАМДЫҚ ТАМАҚТАНДЫРУ ЖӘНЕ СЕРВИС КОЛЛЕДЖІНІҢ ТОП ЖЕТЕКШІЛЕРІ ӘДІСТЕМЕЛІК БІРЛЕСТІГІ ТУРАЛЫ ЕРЕЖЕ</strong></p>
+                            <p><strong>Мақсаттары мен міндеттері:</strong></p>
+                            <p>*Кураторлар мен өндірістік оқыту шеберлерінің тәрбие жұмысының педагогикасы мен психологиясы тұрғысындағы теориялық, ғылыми-әдістемелік дайындық деңгейін көтеру;</p>
+                            <p>*Бірыңғай тәрбие принциптерінің орындалуын қамтамасыз ету;</p>
+                            <p>* Кураторлар мен өндірістік оқыту шеберлерін тәрбие жұмысының заманауи әдістері және тәсілдерімен қаруландыру;</p>
+                            <p>*Топтарда өткізілетін тәрбиелік шараларды жоспарлау, дайындау және өткізу жұмыстарына педагогикалық талдау жасауды үйлестіру;</p>
+                            <p>* Кураторлар мен өндірістік оқыту шеберлерінің&nbsp; озат педагогикалық тәжірибесін зерттеу, жинақтау және тәжірибеде қолдану;</p>
+                            <p>*Топтардағы тәрбие жұмысы жүйесінің қалыптасуы мен дамуына көмек көрсету.</p>
+                            <p><strong>Әдістемелік бірлестіктің құжаттары:</strong></p>
+                            <p>*Бірлестік мүшелерінің тізімі;</p>
+                            <p>*Бірлестіктің жылдық жоспары;</p>
+                            <p>*Бірлестік отырыстарының хаттамалары;</p>
+                            <p>*Тақырыптық бақылау мен өткізілген шаралардың қорытындысы бойынша талдау құжаттары;</p>
+                            <p>* Кураторлар мен өндірістік оқыту шеберлері бірлестігі және топтағы тәрбие жұмысына қатысты әдістемелік құжаттар;</p>
+                            <p><strong>Кураторлар мен өндірістік оқыту шеберлерінің &nbsp;бірлестігі жетекшісінің негізгі міндеттері:</strong></p>
+                            <p>1.Жетекшінің міндеттері:</p>
+                            <p>-бірлестік жұмысын жоспарлау, дайындау, қызметін жүргізу және талдау;</p>
+                            <p>-бірлестіктің жұмысы және өткізілген іс-шаралар бойынша уақытылы талдау құжаттарын жинақтау;</p>
+                            <p>2.Жетекші ұйымдастырады:</p>
+                            <p>– Кураторлар мен өндірістік оқыту шеберлерінің&nbsp; бірлескен жұмысы;</p>
+                            <p>-ашық сабақтар,семинарлар,&nbsp; конференциялар, бірлестік отырыстары;</p>
+                            <p>-педагогтердің озық тәжірибесін зерттеу, жинақтау және тәжірибеде қолдану; -тәрбие жұмыстары бойынша консультациялар өткізу</p>
+                            <p>3.Кураторлар мен өндірістік оқыту шеберлерінің тәрбиелік шараларын жоспарлау, ұйымдастыру және талдау жұмысын үйлестіреді.</p>
+                            <p>4.Тәрбие жұмысының қалыптасуы мен дамуына ықпал етеді;</p>
+                            <p>5.Кураторлар мен өндірістік оқыту шеберлерінің аттестациядан өтуін дайындауға және өткізуге қатысады;</p>
+                            <p>6.Ғылыми-әдістемелік жұмысқа қатысады.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4">
+                        <section id="pagination" class="pb-0 pt-0">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination" aria-label="Previous">
+                                            <span aria-hidden="true"><</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#pagination">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination">3</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#pagination">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination">10</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination">11</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#pagination" aria-label="Next">
+                                            <span aria-hidden="true">></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
+                        <div class="other-news-holder">
+                            <div class="card mt-4 mb-4 card-news">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="with-background-image card-img-top"
+                                             style="background-image:url('assets/slide1.jpg'); "></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card-block pt-2 pr-2 pb-2">
+                                            <h4 class="card-title fs-sm fc-blue"><strong>3 курс студенті АКД-273 тобының студенттеріне “Қарақат зефирі” және “Профитроль” дайындау жолдарын көрсетті.</strong></h4>
+                                            <div class="card-bottom">
+                                                <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+                                                <a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-blue">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4 mb-4 card-news">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="with-background-image card-img-top"
+                                             style="background-image:url('assets/slide2.jpg'); "></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card-block pt-2 pr-2 pb-2">
+                                            <h4 class="card-title fs-sm fc-blue"><strong>3 курс студенті АКД-273 тобының студенттеріне “Қарақат зефирі” және “Профитроль” дайындау жолдарын көрсетті.</strong></h4>
+                                            <div class="card-bottom">
+                                                <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+                                                <a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-blue">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4 mb-4 card-news">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="with-background-image card-img-top"
+                                             style="background-image:url('assets/slide3.jpg'); "></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card-block pt-2 pr-2 pb-2">
+                                            <h4 class="card-title fs-sm fc-blue"><strong>3 курс студенті АКД-273 тобының студенттеріне “Қарақат зефирі” және “Профитроль” дайындау жолдарын көрсетті.</strong></h4>
+                                            <div class="card-bottom">
+                                                <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+                                                <a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-blue">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4 mb-4 card-news">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="with-background-image card-img-top"
+                                             style="background-image:url('assets/slide4.jpg'); "></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card-block pt-2 pr-2 pb-2">
+                                            <h4 class="card-title fs-sm fc-blue"><strong>3 курс студенті АКД-273 тобының студенттеріне “Қарақат зефирі” және “Профитроль” дайындау жолдарын көрсетті.</strong></h4>
+                                            <div class="card-bottom">
+                                                <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+                                                <a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-blue">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4 mb-4 card-news">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="with-background-image card-img-top"
+                                             style="background-image:url('assets/slide5.jpg'); "></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card-block pt-2 pr-2 pb-2">
+                                            <h4 class="card-title fs-sm fc-blue"><strong>Біздің студенттер нан өнімдерін дайындады</strong></h4>
+                                            <div class="card-bottom">
+                                                <div class="float-left align-text-bottom fs-xs fc-gold">06.03.19</div>
+                                                <a href="news.html" class="float-right mr-2 align-text-bottom fs-sm fc-blue">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--news page-->
+    <footer class="footer section fn-gothic fs-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="footer-link" href="">Гос символ</a><br>
+                            <a class="footer-link" href="">Послание президента</a><br>
+                            <a class="footer-link" href="">Вопросы психологу</a><br>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="footer-link" href="">Колледж</a><br>
+                            <a class="footer-link" href="">Абитуриенту</a><br>
+                            <a class="footer-link" href="">Студентам</a><br>
+                            <a class="footer-link" href="">Преподавателям</a><br>
+                            <a class="footer-link" href="">Документы</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="float-md-right">
+                        <a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
+                        <a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
+                        <a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
+                        <div class="social-links float-md-right">
+                            <a href="">
+                                <img width="21" height="21" src="assets/twitter.svg">
+                            </a>
+                            <a href="">
+                                <img width="21" height="21" src="assets/youtube.svg">
+                            </a>
+                            <a href="https://www.facebook.com/ktsk.kopis/">
+                                <img width="21" height="21" src="assets/facebook.svg">
+                            </a>
+                            <a href="">
+                                <img width="21" height="21" src="assets/instagram.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="modal fade" id=searchModal tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="">
+            <!--<div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>-->
+            <form class="modal-body p-0">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+    				<span class="input-group-text" id="basic-addon1">
+    					<img src="assets/search.svg" height=16>
+    				</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Поиск" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
