@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KOPIS - Photos Page</title>
+	<title>KOPIS - Default Template Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="assets/favicon.png" itemprop="image">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="src/page.css">
 	<link rel="stylesheet" type="text/css" href="src/index.css">
-	<link rel="stylesheet" type="text/css" href="src/photos.css">
+	<link rel="stylesheet" type="text/css" href="src/page.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed:700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<style type="text/css">
-		[v-cloak] {display: none}
-	</style>
 </head>
 <body>
 	<div id="app">
@@ -161,54 +157,165 @@
 				</div>
 			</div>
 		</nav>
+		<!--news page-->
 		<section id="content" class="fn-gothic">
 			<div class="content">
 				<div class="container">
 					<div class="row">
 						<div class="col">
 							<nav aria-label="breadcrumb">
-							  <ol class="breadcrumb fs-sm fc-gold">
-							    <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Главная</a></li>
-							    <li class="breadcrumb-item">Студентам</li>
-							    <li class="breadcrumb-item active" aria-current="page">Фотографии</li>
+							  <ol class="breadcrumb fs-sm">
+								  <li class="breadcrumb-item"><a href="index.html" class="fc-gold">Колледж</a></li>
+								  <li class="breadcrumb-item active" aria-current="page">Колледж басшылығы</li>
 							  </ol>
 							</nav>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col" style="margin-left:30px">
-							<h3 class="fn-impact fc-red">Фотогалерея</h3>
-						</div>
-					</div>
-					<div v-cloak>
-						<p class="text-center fc-gold" v-if="albums.length>0">
-							<a v-for="(album,index) in albums"
-								class="link mr-3"
-								:class="isSelectedAlbum(index)"
-								@click="selectAlbum(index)"
-								style="cursor:pointer"
-							>
-								{{album.title}}
-							</a>
-						</p>
-						<div class="row" v-if="albums.length>0">
-							<div class="col">
-								<img class="w-100 photo"
-									:src="albums[selectedAlbum].photos[albums[selectedAlbum].selectedPhoto]">
+						<div class="col-md-12 manager-items">
+							<h2 class="fn-impact fc-red">Колледж басшылығы</h2>
+							<p class="fc-gold fs-sm">Жаңартылған күні 14.04.2019</p>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Raigul.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Кобегенова Райгул Алдабергенова</div>
+									<div class="manager-full">
+										<p><b>Колледж әдіскері Кобегенова Райгул Алдабергеновна,  жоғары санатты қазақ тілі мен әдебиеті пәнінің оқытушысы.</b></p>
+
+										<p>Колледжде 5 циклдық әдістемелік комиссия жұмыс істейді. Әрбір педагогтың және  әрбір циклдық комиссияның жыл басынан бері жұмыс істеп келе жатқан, өздігінен білімін жетілдіруге арналған жеке жұмыс жоспары бар. Барлық әдістемелік тақырыптар циклдық комиссия отырысында қарастырылып, колледждің педагогикалық кеңесінде бекітілген, тақырыптар  жалпы колледждің тақырыбымен тікелей байланысты.</p>
+
+										<p><b>«Тілдер және әлеуметтік пәндер» циклдық комиссиясының әдістемелік тақырыбы:</b></p>
+
+										<p>«Тілдер және әлеуметтік пәндер сабақтарында білім беру технологияларын жетілдіру негізінде бәсекеге қабілетті маманның құзіреттілігін қалыптастыру».</p>
+									</div>
+								</div>
+							</div>
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Umtishah.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Кстаубаева Умитшах Ануарбековна </div>
+									<div class="manager-full">
+										<p><b>Колледждің әдістемелік кабинеті жұмысын директордың оқу – әдістемелік жұмысы жөніндегі орынбасары Кстаубаева Умитшах Ануарбековна және колледж әдіскері Кобегенова Райгул Алдабергеновна жүргізеді.</b></p>
+										<p>Қоғамдық тамақтандыру және сервис колледжінің әдістемелік тақырыбы: «Білім беру технологиясын жетілдіру негізінде бәсекеге қабілетті маманның басты құзіреттілігін қалыптастыру».</p>
+										<p>Директордың оқу – әдістемелік жұмысы  жөніндегі орынбасары Кстаубаева Умитшах Ануарбековна,  жоғары санатты тарих пәнінің оқытушысы, педагогика ғылымдарының магистрі.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/GulnarK.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Карабалина Гульнар Сабитовна</div>
+									<div class="manager-full">
+										<p><b>«Тілдер және әлеуметтік пәндер» циклдық комиссиясының төрайымы: Карабалина Гульнар Сабитовна, жоғары санатты ағылшын тілі пәнінің оқытушысы.</b></p>
+										<p><b>Тiлдер жане әлеуметтiк пәндер циклiнің әдістемелік тақырыбы:</b></p>
+										<p>Әлеуметтік-гуманитарлық пәндер сабақтарында бiлiм беру технологиясын жетiлдiру негiзiнде бәсекеге қабілеттi маманның құзiреттiлiгiн калыптастыру такырыбында жұмыс жасайды.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Asiya.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Шуакова Асия Кабиденовна</div>
+									<div class="manager-full">
+										<p><b>«Жаратылыстану пәндері» циклдық комиссиясының төрайымы Шуакова Асия Кабиденовна,  жоғары санатты, математика пәнінің оқытушысы.</b></p>
+										<p><b>«Арнайы пәндер» циклдық комиссиясының әдістемелік тақырыбы:</b></p>
+										<p>“Білім беру технологиясы –арнайы пәндер сабақтарында және кәсіптік оқытуда білім алушылардың  кәсіптік сапасын қалыптастырудың негізі”.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Saule.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Кожабергинова Сауле Маулыхановна</div>
+									<div class="manager-full">
+										<p><b>«Арнайы пәндер» циклдық комиссиясының төрайымы Кожабергинова Сауле Маулыхановна, жоғары санатты оқытушы.</b></p>
+										<p><b>«Кураторлар, дене тәрбиесі, алғашқы әскери дайындық» циклдық комиссиясының әдістемелік тақырыбы:</b></p>
+										<p>Колледж студенттерін тәрбиелеудегі «Мәңгілік ел» құндылықтары.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Shynar.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Есенгулова Шынар Калменбаевна</div>
+									<div class="manager-full">
+										<p><b>«Кураторлар, дене тәрбиесі, алғашқы әскери дайындық» циклдық комиссиясының төрайымы Есенгулова Шынар Калменбаевна, жоғары санатты химия-биология пәнінің оқытушысы.</b></p>
+										<p><b>«Өндірістік оқыту шеберлері» циклдық комиссиясының әдістемелік тақырыбы:</b></p>
+										<p>“Мамандардың кәсіби дайындық деңгейін көтеру негізінде білім беру технологияларын жетілдіру”.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="manager-item row">
+								<div class="manager-photo col-sm-4"><img src="src/resources/images/managers/Samal.png" alt=""></div>
+								<div class="manager-info col-sm-8">
+									<div class="manager-name">Койшибаева Самал Айдархановна</div>
+									<div class="manager-full">
+										<p><b>«Өндірістік оқыту шеберлері» циклдық комиссиясының төрайымы, Койшибаева Самал Айдархановна, бірінші санатты өндірістік оқыту шебері.</b></p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="align-items-center myrow w-100" v-if="albums.length>0">
-							<div v-for="(photo, index) in albums[selectedAlbum].photos"
-								class="with-background-image selector photo"
-								:style="getStyle(photo)"
-								:class="isSelectedPhoto(index)"
-								@click="selectPhoto(index)"
-							></div>
-						</div>
+
+						<style>
+							.manager-item {
+								margin-bottom: 30px;
+								background: #bee6fa;
+								padding: 25px 10px;
+								border-radius: 15px;
+								box-shadow: 3px 4px 9px #005f8275;
+							}
+							.manager-photo {
+								display: flex;
+								align-items: center;
+							}
+							.manager-photo img {
+								width: 100%;
+								margin: 0 !important;
+							}
+							.manager-info {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+							}
+							.manager-name {
+								font-size: 25px;
+								text-align: center;
+								color: #5E0000;
+								font-weight: bold;
+							}
+							.manager-name a {
+								color: #5E0000;
+								text-decoration: none;
+							}
+							.manager-name a:hover {
+								/*text-decoration: underline;*/
+							}
+							.manager-position {
+								font-size: 20px;
+								font-weight: bold;
+								text-align: center;
+							}
+							.manager-stage {
+								font-size: 20px;
+								font-weight: normal;
+								text-align: center;
+							}
+							.manager-full {
+								text-align: justify;
+								margin-top: 15px;
+							}
+						</style>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!--news page-->
 		<footer class="footer section fn-gothic fs-xs">
 			<div class="container">
 				<div class="row">
@@ -231,7 +338,6 @@
 					</div>
 					<div class="col-md-6">
 						<div class="float-md-right">
-
 							<a class="float-md-right text-md-right footer-link" href="https://2gis.kz/astana/query/колледж%20общественного%20питания%20и%20сервиса/firm/70000001018099858?queryState=center%2F71.471376%2C51.14362%2Fzoom%2F16" target="_blank">г. Астана<br>Майлина 12</a><br>
 							<a class="footer-link float-md-right" href="tel:+77172501647">8 (7172) 501647</a><br>
 							<a class="footer-link float-md-right" href="mailto:ktsk.astana@mail.ru">ktsk.astana@mail.ru</a><br>
@@ -279,54 +385,5 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script type="text/javascript">
-    	const alb = 
-[
-	{
-		title: 'Альбом-1',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide1.jpg',
-			'assets/slide2.jpg',
-			'assets/slide3.jpg',
-			'assets/slide4.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	},
-	{
-		title: 'Альбом-2',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide2.jpg',
-			'assets/slide1.jpg',
-			'assets/slide4.jpg',
-			'assets/slide3.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	},
-	{
-		title: 'Альбом-3',
-		selectedPhoto: 0,
-		photos: [
-			'assets/slide3.jpg',
-			'assets/slide4.jpg',
-			'assets/slide1.jpg',
-			'assets/slide2.jpg',
-			'assets/slide5.jpg',
-			'assets/slide6.jpg',
-			'assets/slide7.jpg',
-			'assets/slide8.jpg',
-		],
-	}
-];
-    </script>
-    <script src="src/photos.js"></script>
 </body>
 </html>

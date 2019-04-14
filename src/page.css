@@ -80,11 +80,22 @@ li.page-item.active a.page-link {
 }
 .content table td {
 	border: 1px solid black;
-	padding: 3px;
+	padding: 5px;
 }
 .content table {
 	width: 100%
 }
 .content img {
 	max-width: 100%;
+}
+.content .imgw100 {
+    display: flex;
+    justify-content: center;
+}
+table.noborder  img {
+    width: 100%;
+    height: auto;
+}
+table.noborder td {
+    border: none;
 }
