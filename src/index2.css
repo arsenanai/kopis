@@ -126,6 +126,3 @@ div.links a{
     -o-transition:all 0.1s ease;
     transition:all 0.1s ease;
 }
-.carousel-indicators {
-    display: none;
-}

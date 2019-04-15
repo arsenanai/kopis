@@ -10,7 +10,11 @@
 	margin-left: 2px;
 	border-bottom-left-radius: 6vw;
 	border-bottom-right-radius: 6vw;
-	padding-bottom: 10px
+	padding-bottom: 10px;
+	text-align: justify;
+}
+h2.fn-impact.fc-red {
+	text-align: left;
 }
 .breadcrumb {
 	background-color: inherit
@@ -73,4 +77,25 @@ li.page-item.active a.page-link {
 .dropdown-toggle::after {
     content:none;
     margin-left:0px;
+}
+.content table td {
+	border: 1px solid black;
+	padding: 5px;
+}
+.content table {
+	width: 100%
+}
+.content img {
+	max-width: 100%;
+}
+.content .imgw100 {
+    display: flex;
+    justify-content: center;
+}
+table.noborder  img {
+    width: 100%;
+    height: auto;
+}
+table.noborder td {
+    border: none;
 }
