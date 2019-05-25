@@ -306,16 +306,11 @@
 		</section>
 		<section id="videos" class="fn-impact sc-bc-blue">
 			<p class="text-center fs-xxl fc-red">Наши видео</p>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 d-flex align-items-center text-center">
+			<div class="container" v-cloak>
+				<div class="row" v-if="videos.length>0">
+					<div class="col-lg-6 d-flex align-items-center text-center" v-for="(video, index) in videos">
 						<iframe class="video"
-							src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
-						</iframe>
-					</div>
-					<div class="col-lg-6 d-flex align-items-center text-center">
-						<iframe class="video"
-							src="https://www.youtube.com/embed/yQ063jjZVOk" frameborder="0" allowfullscreen>
+							:src="getVideoLink(video)" frameborder="0" allowfullscreen>
 						</iframe>
 					</div>
 				</div>
@@ -498,6 +493,11 @@
 	  </div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+    	const api_key = "AIzaSyA682zBklG2iwiXVEJ9ZElSpSItjwAKc9k"
+    	const channel = "UCvf2dudNiGgh3eKhA-9EkVw"
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			var $window = $(window);
