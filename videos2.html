@@ -16,7 +16,7 @@
 	</style>
 </head>
 <body>
-	<div id="app">
+	<div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-white pt-0 pb-0" id="navbar">
 			<div class="container">
 				<a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="index.html">
@@ -179,10 +179,10 @@
 							<h3 class="fn-impact fc-red">Видеогалерея</h3>
 						</div>
 					</div>
-					<div v-cloak>
-						<div class="row" v-if="videos.length>0">
+					<div v-cloak id="appVd">
+						<div class="row" v-if="vs.length>0">
 							<div class="col-sm-6 col-md-4 col-lg-3 fs-sm"
-								v-for="(video, index) in videos"
+								v-for="(video, index) in vs"
 							>
 								<table class="video-holder mr-auto ml-auto"
 									:class="isSelectedVideo(index)">
@@ -199,9 +199,9 @@
 											{{video.title}}
 										</td>
 										<td class="duration fc-gold pr-2">
-											<span class="float-right">
+											<!--<span class="float-right">
 												{{video.duration}}
-											</span>
+											</span>-->
 										</td>
 									</tr>
 								</table>
@@ -301,10 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    	const api_key = "AIzaSyA682zBklG2iwiXVEJ9ZElSpSItjwAKc9k"
-    	const channel = "UCvf2dudNiGgh3eKhA-9EkVw"
-    </script>
+    <script src="src/youtube_channel_cache.js"></script>	
     <script src="src/videos2.js"></script>
 </body>
 </html>

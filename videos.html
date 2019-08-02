@@ -14,7 +14,7 @@
 	</style>
 </head>
 <body>
-	<div id="app">
+	<div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-white pt-0 pb-0" id="navbar">
 			<div class="container">
 			  	<a class="navbar-brand mb-0 h1 mr-auto fc-blue" href="index.html">
@@ -126,80 +126,34 @@
 							<h3 class="fn-impact fc-red">Видеогалерея</h3>
 						</div>
 					</div>
-					<div v-cloak>
-						<p class="text-center fc-gold" v-if="albums.length>0">
-							<a v-for="(album,index) in albums"
-								class="link mr-3"
-								:class="isSelectedAlbum(index)"
-								@click="selectAlbum(index)"
-								style="cursor:pointer"
-							>
-								{{album.title}}
-							</a>
-						</p>
-						<div class="row" v-if="albums.length>0">
+					<div v-cloak id="appVd">
+						<div class="row" v-if="videos.length>0">
 							<div class="col-sm-6 col-md-4 col-lg-3 fs-sm"
-								v-for="(video, index) in albums[selectedAlbum].videos"
-								@click="selectVideo(index)"
+								v-for="(video, index) in videos"
 							>
-								<table class="video-holder mr-auto ml-auto" style="cursor:pointer">
+								<table class="video-holder mr-auto ml-auto"
+									:class="isSelectedVideo(index)">
 									<tr>
-										<td colspan=2>
+										<td colspan=2 class="pl-0 pr-0">
 											<div class="with-background-image video"
-												:class="isSelectedVideo(index)"
 												:style="getStyle(video)"
+												@click="selectVideo(index)"
 											></div>
 										</td>
 									</tr>
-									<tr>
-										<td class="title float-left fc-blue">
+									<tr class="">
+										<td class="title float-left fc-blue ml-2">
 											{{video.title}}
 										</td>
-										<td class="duration fc-gold">
-											<span class="float-right">
+										<td class="duration fc-gold pr-2">
+											<!--<span class="float-right">
 												{{video.duration}}
-											</span>
+											</span>-->
 										</td>
 									</tr>
 								</table>
 							</div>
 						</div>
-						<section class="pb-0 pt-0">
-							<nav aria-label="Page navigation example">
-							  <ul class="pagination justify-content-center">
-							    <li class="page-item">
-							      <a class="page-link" href="#pagination" aria-label="Previous">
-							        <span aria-hidden="true"><</span>
-							        <span class="sr-only">Previous</span>
-							      </a>
-							    </li>
-							    <li class="page-item">
-							    	<a class="page-link" href="#videos">1</a>
-							    </li>
-							    <li class="page-item active">
-							    	<a class="page-link" href="#videos">2</a>
-							    </li>
-							    <li class="page-item">
-							    	<a class="page-link" href="#videos">3</a>
-							    </li>
-							    <li class="page-item disabled">
-							    	<a class="page-link" href="#videos">...</a>
-							    </li>
-							    <li class="page-item">
-							    	<a class="page-link" href="#videos">10</a>
-							    </li>
-							    <li class="page-item">
-							    	<a class="page-link" href="#videos">11</a>
-							    </li>
-							    <li class="page-item">
-							      <a class="page-link" href="#pagination" aria-label="Next">
-							        <span aria-hidden="true">></span>
-							        <span class="sr-only">Next</span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>	
-						</section>
 					</div>
 				</div>
 			</div>
