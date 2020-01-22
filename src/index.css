@@ -307,10 +307,8 @@ a.fc-blue:hover{
 }
 .card-block{
     position: relative;
-    height: 90%;
-    padding: 0 !important;
-    left: -15px;
-    top: 15px;
+    height: 100%;
+    width:100%;
 }
 .card-bottom{
     position: absolute;
@@ -451,4 +449,9 @@ a.footer-link {
 }
 .br {
     height: 15px;
+}
+.card-title{
+    margin-bottom:30px;
+    overflow: auto;
+    max-height:90%;
 }
