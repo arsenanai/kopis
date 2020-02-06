@@ -38,12 +38,13 @@ var app = new Vue({
         },
         selectVideo: function(index) {
             this.selectedVideo = index
+            console.log(index)
             $('#videoModal').modal()
         },
         getSelectedVideoLink: function(){
             if(this.vs[this.selectedVideo])
                 return 'https://www.youtube.com/embed/'+this.vs[this.selectedVideo].id
-            else return ''
+            else return 'not found'
         },
         /*getDuration: function(videoId, i){
             var video = this.videos[i]

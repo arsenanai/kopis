@@ -82,6 +82,10 @@ li.page-item.active a.page-link {
 	border: 1px solid black;
 	padding: 5px;
 }
+.content table.video-holder td {
+	border: 0px;
+	padding: 0px;
+}
 .content table {
 	width: 100%
 }
